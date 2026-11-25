@@ -42,3 +42,26 @@ def test_the_prediction_equals_the_one_of_the_scoring_script_and_keeps_the_shape
     w = np.array([[1.2, 3.0, 2.0], [5.0, 1.0, 4.0]])
     assert np.allclose(calibrated_uwe_dr2(g, w), sd.predicted_uwe(g, w, bright, "dr2", faint), rtol=1e-12)
     assert calibrated_uwe_dr2(g, w).shape == (2, 3) and np.asarray(orbit_factor_dr2(12.0)).shape == ()
+
+
+@pytest.mark.torch_cpu
+def test_the_documented_call_gives_the_dr2_ruwe_of_the_scoring_scripts_prediction():
+    """The call of the README: a star through simulate_fit with uwe_factor=1, then calibrated_uwe_dr2(G, uwe of the DR2 window) over u0_dr2(G, bp_rp), against the scoring script's prediction for the same inputs and seed."""
+    import scoreboard_dr2 as sd
+    import wobbler as wb
+    from wobbler.ruwe import u0_dr2
+
+    rng = np.random.default_rng(1)
+    scan = wb.Scan(jd=np.sort(rng.uniform(2456891.5, 2457531.5, 60)), psi=rng.uniform(0, np.pi, 60), plx_factor=rng.uniform(-1, 1, 60), device="cpu")
+    orbit = wb.Orbit(period_days=300.0, ecc=0.2, t_peri_days=-50.0, omega=1.0)
+    bands = json.loads(TABLE.read_text())["bands"]
+    bright, faint = [b["B"] for b in bands[:16]], [b["B"] for b in bands[16:]]
+    for G in (11.0, 13.6):
+        fit = wb.simulate_fit(scan, orbit, a1_au=0.5, parallax_mas=np.array([2.0]), G=G, n_orient=20, seed=5, uwe_factor=1.0, device="cpu")
+        uwe = fit.windows["DR2"]["uwe"]
+        ruwe = calibrated_uwe_dr2(G, uwe) / u0_dr2(G, 1.0)
+        expected = sd.predicted_uwe(G, np.asarray(uwe), bright, "dr2", faint) / float(u0_dr2(G, 1.0))
+        ok = fit.windows["DR2"]["ok"].numpy()
+        assert np.shape(ruwe) == (1, 20) and ok.sum() >= 10
+        assert np.allclose(np.asarray(ruwe)[ok], expected[ok], rtol=1e-12, atol=0)
+        assert np.all(np.asarray(ruwe)[ok] > 0.5)
