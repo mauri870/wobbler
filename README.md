@@ -54,6 +54,17 @@ fit = simulate_fit(scan, orbit, a1_au=1.0, parallax_mas=np.array([2.0]), G=13.8,
 print(np.median(fit.ruwe.numpy()))
 ```
 
+For Gaia DR2, run with `uwe_factor=1` and calibrate the window's unit weight error:
+
+```python
+from wobbler.ruwe import u0_dr2
+from wobbler.uwe_factor import calibrated_uwe_dr2
+
+fit = simulate_fit(scan, orbit, a1_au=1.0, parallax_mas=np.array([2.0]), G=13.8, n_orient=300, seed=1, uwe_factor=1)
+ruwe_dr2 = calibrated_uwe_dr2(13.8, fit.windows["DR2"]["uwe"]) / u0_dr2(13.8, 1.0)  # u0_dr2(G, bp_rp)
+print(np.median(ruwe_dr2[fit.windows["DR2"]["ok"]].numpy()))
+```
+
 More in `examples/`.
 
 ## Licence
