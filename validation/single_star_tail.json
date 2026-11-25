@@ -1,0 +1,244 @@
+{
+ "quantity": "the tail above RUWE 1.4 of 19,600 Gaia DR3 stars with a five-parameter solution and no non-single-star solution (the sample of tests/golden/single_stars_dr3.csv.gz) against Gaia DR3's double-star flags and its radial-velocity variability",
+ "flags": {
+  "definition": "a star is flagged when duplicated_source is true or ipd_frac_multi_peak, ipd_gof_harmonic_amplitude or ipd_frac_odd_win is above the 99th percentile of the stars with RUWE under 1.2 in its band of 1 mag of G",
+  "pooled": {
+   "stars": 19600,
+   "tail": 2012,
+   "tail_share": 0.10265306122448979,
+   "tail_share_interval": [
+    0.09848155597281225,
+    0.10698029595318984
+   ],
+   "flagged_share_of_tail": 0.294234592445328,
+   "unflagged_stars": 17860,
+   "unflagged_tail": 1420,
+   "unflagged_tail_share": 0.07950727883538634,
+   "unflagged_tail_share_interval": [
+    0.0756294916142115,
+    0.08356591907505483
+   ]
+  },
+  "flagged_share_of_control": 0.061036022261635375,
+  "by_flag_share_of_tail": {
+   "ipd_frac_multi_peak": 0.2430417495029821,
+   "ipd_gof_harmonic_amplitude": 0.0268389662027833,
+   "ipd_frac_odd_win": 0.009443339960238568,
+   "duplicated_source": 0.04671968190854871
+  },
+  "by_band": {
+   "G 9 to 10": {
+    "stars": 2800,
+    "tail": 328,
+    "tail_share": 0.11714285714285715,
+    "tail_share_interval": [
+     0.1057521518879834,
+     0.12958268300425876
+    ],
+    "flagged_share_of_tail": 0.27439024390243905,
+    "unflagged_stars": 2436,
+    "unflagged_tail": 238,
+    "unflagged_tail_share": 0.09770114942528736,
+    "unflagged_tail_share_interval": [
+     0.08653607247714154,
+     0.11013308834051155
+    ]
+   },
+   "G 10 to 11": {
+    "stars": 2800,
+    "tail": 312,
+    "tail_share": 0.11142857142857143,
+    "tail_share_interval": [
+     0.10030153926595342,
+     0.12362038271423265
+    ],
+    "flagged_share_of_tail": 0.2916666666666667,
+    "unflagged_stars": 2369,
+    "unflagged_tail": 221,
+    "unflagged_tail_share": 0.09328830730265936,
+    "unflagged_tail_share_interval": [
+     0.08222599329428729,
+     0.10566754329913725
+    ]
+   },
+   "G 11 to 12": {
+    "stars": 2800,
+    "tail": 403,
+    "tail_share": 0.14392857142857143,
+    "tail_share_interval": [
+     0.13141432393323196,
+     0.15741854023427307
+    ],
+    "flagged_share_of_tail": 0.20843672456575682,
+    "unflagged_stars": 2595,
+    "unflagged_tail": 319,
+    "unflagged_tail_share": 0.12292870905587669,
+    "unflagged_tail_share_interval": [
+     0.1108494097297795,
+     0.13612277972570716
+    ]
+   },
+   "G 12 to 13": {
+    "stars": 2800,
+    "tail": 312,
+    "tail_share": 0.11142857142857143,
+    "tail_share_interval": [
+     0.10030153926595342,
+     0.12362038271423265
+    ],
+    "flagged_share_of_tail": 0.27564102564102566,
+    "unflagged_stars": 2606,
+    "unflagged_tail": 226,
+    "unflagged_tail_share": 0.08672294704528012,
+    "unflagged_tail_share_interval": [
+     0.0765168012472269,
+     0.09814575298594952
+    ]
+   },
+   "G 13 to 14": {
+    "stars": 2800,
+    "tail": 284,
+    "tail_share": 0.10142857142857142,
+    "tail_share_interval": [
+     0.09078662893466889,
+     0.11316269544941902
+    ],
+    "flagged_share_of_tail": 0.3028169014084507,
+    "unflagged_stars": 2596,
+    "unflagged_tail": 198,
+    "unflagged_tail_share": 0.07627118644067797,
+    "unflagged_tail_share_interval": [
+     0.06667493761849853,
+     0.08711966279100335
+    ]
+   },
+   "G 14 to 15": {
+    "stars": 2800,
+    "tail": 226,
+    "tail_share": 0.08071428571428571,
+    "tail_share_interval": [
+     0.07118963691820211,
+     0.09138787815968248
+    ],
+    "flagged_share_of_tail": 0.40707964601769914,
+    "unflagged_stars": 2616,
+    "unflagged_tail": 134,
+    "unflagged_tail_share": 0.05122324159021407,
+    "unflagged_tail_share_interval": [
+     0.043413912992048664,
+     0.060348696167222646
+    ]
+   },
+   "G 15 to 16": {
+    "stars": 2800,
+    "tail": 147,
+    "tail_share": 0.0525,
+    "tail_share_interval": [
+     0.04483479300259172,
+     0.06139146457201592
+    ],
+    "flagged_share_of_tail": 0.42857142857142855,
+    "unflagged_stars": 2642,
+    "unflagged_tail": 84,
+    "unflagged_tail_share": 0.03179409538228615,
+    "unflagged_tail_share_interval": [
+     0.025753968428144605,
+     0.03919383494753745
+    ]
+   }
+  },
+  "thresholds_99th_of_control": {
+   "9": {
+    "ipd_frac_multi_peak": 14.0,
+    "ipd_gof_harmonic_amplitude": 0.14134798735380064,
+    "ipd_frac_odd_win": 0.0
+   },
+   "10": {
+    "ipd_frac_multi_peak": 17.0,
+    "ipd_gof_harmonic_amplitude": 0.12151228755712475,
+    "ipd_frac_odd_win": 0.0
+   },
+   "11": {
+    "ipd_frac_multi_peak": 15.0,
+    "ipd_gof_harmonic_amplitude": 0.11837171345949164,
+    "ipd_frac_odd_win": 0.0
+   },
+   "12": {
+    "ipd_frac_multi_peak": 10.9699999999998,
+    "ipd_gof_harmonic_amplitude": 0.12427029646933076,
+    "ipd_frac_odd_win": 0.0
+   },
+   "13": {
+    "ipd_frac_multi_peak": 8.0,
+    "ipd_gof_harmonic_amplitude": 0.12036280646920217,
+    "ipd_frac_odd_win": 0.0
+   },
+   "14": {
+    "ipd_frac_multi_peak": 6.720000000000255,
+    "ipd_gof_harmonic_amplitude": 0.1238596516847611,
+    "ipd_frac_odd_win": 0.0
+   },
+   "15": {
+    "ipd_frac_multi_peak": 7.0,
+    "ipd_gof_harmonic_amplitude": 0.12125860475003715,
+    "ipd_frac_odd_win": 0.36999999999989086
+   }
+  },
+  "simulated_tail_share": {
+   "binned": 0.0,
+   "unbinned_with_factor": 0.008
+  },
+  "rule": "H0, the flags do not explain it",
+  "share_of_tail_the_flags_explain": 0.22547581253798588
+ },
+ "radial_velocity": {
+  "definition": "radial-velocity variable by the selection that Gaia DR3's documentation of gaia_source suggests: rv_chisq_pvalue < 0.01 and rv_renormalised_gof > 4 and rv_nb_transits >= 10; testable where the three are given",
+  "unflagged tail": {
+   "testable": 787,
+   "variable": 230,
+   "share": 0.29224904701397714,
+   "interval": [
+    0.26154443384628967,
+    0.3249720063612057
+   ]
+  },
+  "unflagged control": {
+   "testable": 6649,
+   "variable": 521,
+   "share": 0.07835764776658144,
+   "interval": [
+    0.07213888341286237,
+    0.08506335630377243
+   ]
+  },
+  "flagged tail": {
+   "testable": 189,
+   "variable": 50,
+   "share": 0.26455026455026454,
+   "interval": [
+    0.2068074953731352,
+    0.3316738281587169
+   ]
+  },
+  "all stars": {
+   "testable": 8811,
+   "variable": 961,
+   "share": 0.1090682101918057,
+   "interval": [
+    0.10272876321787809,
+    0.1157484014767206
+   ]
+  },
+  "ratio": 3.7296812161150363,
+  "rule": "H_bin",
+  "testable_by_band": {
+   "G 9 to 10": 1933,
+   "G 10 to 11": 2183,
+   "G 11 to 12": 2429,
+   "G 12 to 13": 2037,
+   "G 13 to 14": 228,
+   "G 14 to 15": 1,
+   "G 15 to 16": 0
+  }
+ }
+}

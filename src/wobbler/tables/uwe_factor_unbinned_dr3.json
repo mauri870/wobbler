@@ -1,0 +1,235 @@
+{
+ "quantity": "factor between Gaia DR3's RUWE of a single star and the RUWE this package's unbinned mode (simulate_fit with binned=False and uwe_factor=1) simulates for it, by G: the median archive RUWE of the stars of a band over the median simulated RUWE of the same stars",
+ "sample": "gaiadr3.gaia_source, astrometric_params_solved = 31, non_single_star = 0, parallax > 0.1 mas, nu_eff_used_in_astrometry and ruwe not null, no cut on RUWE; the 700 stars of each band of 0.25 mag from G 9 to 16 with the lowest random_index; 19,600 stars, none of them in gaiadr3.nss_two_body_orbit",
+ "simulation": "each star once, in its own position, G, parallax and nu_eff, with no companion (a1_au = 0), the DR3 window, binned=False and uwe_factor=1, seed the index of the star in the sample sorted by G; the binned mode with its default calibration, for the check",
+ "fit": "f of a band is the median archive RUWE over the median simulated RUWE of the band's 700 stars; the factor is the linear interpolation between the band centres and holds the end value below G 9.125 and above G 15.875, where the sample ends",
+ "check": "fitted on 350 randomly chosen stars of each band (seed 17290) and tested on the other 350 of each band against the binned mode with its default calibration: the two-sample Kolmogorov-Smirnov statistic D of the RUWE against the archive's is 0.097 for the unbinned mode with this factor and 0.237 for the binned mode on the 9,800 stars of the test half; the unbinned mode is closer in 28 of 28 bands and worse in none (each by more than a bootstrap standard error of 200 resamples); with the halves exchanged D is 0.095 and 0.238, 28 of 28 bands. The width of the RUWE distribution (16th to 84th percentile) is 0.268 against the archive's 0.278 (binned mode 0.116); the share of stars above RUWE 1.4 is 0.008 against the archive's 0.103 (binned mode 0.000): the factor does not reproduce that tail",
+ "bands_note": "band centres are the nodes of the linear interpolation; the table is fitted on all 19,600 stars; tests/golden/single_stars_dr3.csv.gz holds them with the halves of the check marked fit and test",
+ "bands_sha256": "06d7f380d669c1b29a962e3eec043c06c9fddb4b9a5560555ed6405fd1212054",
+ "bands": [
+  {
+   "G": [
+    9.0,
+    9.25
+   ],
+   "f": 1.470483,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    9.25,
+    9.5
+   ],
+   "f": 1.448578,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    9.5,
+    9.75
+   ],
+   "f": 1.471511,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    9.75,
+    10.0
+   ],
+   "f": 1.477597,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    10.0,
+    10.25
+   ],
+   "f": 1.531319,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    10.25,
+    10.5
+   ],
+   "f": 1.570024,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    10.5,
+    10.75
+   ],
+   "f": 1.46926,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    10.75,
+    11.0
+   ],
+   "f": 1.555472,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    11.0,
+    11.25
+   ],
+   "f": 1.847755,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    11.25,
+    11.5
+   ],
+   "f": 1.948125,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    11.5,
+    11.75
+   ],
+   "f": 1.69051,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    11.75,
+    12.0
+   ],
+   "f": 1.487903,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    12.0,
+    12.25
+   ],
+   "f": 1.355659,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    12.25,
+    12.5
+   ],
+   "f": 1.266636,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    12.5,
+    12.75
+   ],
+   "f": 1.232808,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    12.75,
+    13.0
+   ],
+   "f": 1.330218,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    13.0,
+    13.25
+   ],
+   "f": 1.070851,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    13.25,
+    13.5
+   ],
+   "f": 1.022644,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    13.5,
+    13.75
+   ],
+   "f": 1.015852,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    13.75,
+    14.0
+   ],
+   "f": 1.015069,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    14.0,
+    14.25
+   ],
+   "f": 1.015483,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    14.25,
+    14.5
+   ],
+   "f": 1.022942,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    14.5,
+    14.75
+   ],
+   "f": 1.024653,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    14.75,
+    15.0
+   ],
+   "f": 1.029621,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    15.0,
+    15.25
+   ],
+   "f": 1.030389,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    15.25,
+    15.5
+   ],
+   "f": 1.039718,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    15.5,
+    15.75
+   ],
+   "f": 1.044316,
+   "n_archive": 700
+  },
+  {
+   "G": [
+    15.75,
+    16.0
+   ],
+   "f": 1.045848,
+   "n_archive": 700
+  }
+ ]
+}

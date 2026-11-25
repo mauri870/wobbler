@@ -1,0 +1,43 @@
+{
+ "wobbler_commit": "a0bdbc7",
+ "positions": 12288,
+ "sets_per_scan": 20,
+ "seed": 1733,
+ "epoch_error_mas": 0.3,
+ "windows": {
+  "DR3": {
+   "fitted_scans": 12288,
+   "not_fitted_scans": 0,
+   "largest_difference_in_formal_errors": 4.187816823979872e-12,
+   "worst_scan": {
+    "ra": 20.623182714238155,
+    "dec": 81.07728621776134,
+    "epochs": 44,
+    "cond_A": 1.7260547976533211,
+    "cond_normal": 2.979265164502047
+   },
+   "cond_A_median": 2.0601113617354354,
+   "cond_A_max": 6.553434608451314,
+   "cond_normal_median": 4.244058823577085,
+   "cond_normal_max": 42.94750516724749
+  },
+  "DR2": {
+   "fitted_scans": 12288,
+   "not_fitted_scans": 0,
+   "largest_difference_in_formal_errors": 2.9389966981557136e-12,
+   "worst_scan": {
+    "ra": 42.78885829673266,
+    "dec": 65.58079267253859,
+    "epochs": 50,
+    "cond_A": 3.322548410069958,
+    "cond_normal": 11.03932793725843
+   },
+   "cond_A_median": 3.869039197064848,
+   "cond_A_max": 23.284153965251626,
+   "cond_normal_median": 14.969464317857309,
+   "cond_normal_max": 542.1518258775453
+  }
+ },
+ "seconds": 87.9,
+ "check": "the solve is adequate when the largest difference from numpy.linalg.lstsq (an SVD of the weighted design, which does not form the normal equations) is under 1e-6 formal errors"
+}

@@ -1,0 +1,9 @@
+{
+ "source": "https://www.cosmos.esa.int/documents/29201/13871463/RUWE_DR3.zip/b6bb6025-d1ea-c1fc-8bfb-abbad8cb1999?t=1695233345579",
+ "reference": "Lindegren 2023-09-13, RUWE_DR3.zip of https://www.cosmos.esa.int/en/web/gaia/dr3-auxiliary-data",
+ "zip_sha256": "37cecf81826f82cca890c8f83a58dc22f71cb95560972071bbc628ce343eacb5",
+ "member": "table_u0_g_c_p5.txt",
+ "member_sha256": "e0e1c0f28e734e0fc90a2a53ec541ffba0b8d4abc4341f324f6c12ec7f0a0d43",
+ "grid": "G 4 to 21 in steps of 0.02, nu_eff 1.0 to 2.0 per micron in steps of 0.01",
+ "use": "RUWE = UWE / u0(G, nu_eff_used_in_astrometry), five-parameter solutions; bilinear inside the grid, nearest value outside"
+}

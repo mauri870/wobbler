@@ -1,0 +1,12 @@
+{"run": "cpu-1-empty-cache", "time": "2026-11-23T22:07:29Z", "load_1min": 0.982421875, "memory_available_kib": 22027488}
+{"run": "cpu-1-filled-cache", "time": "2026-11-23T22:07:56Z", "load_1min": 0.97021484375, "memory_available_kib": 21730248}
+{"run": "cpu-2-empty-cache", "time": "2026-11-23T22:08:22Z", "load_1min": 0.87841796875, "memory_available_kib": 21772920}
+{"run": "cpu-2-filled-cache", "time": "2026-11-23T22:11:06Z", "load_1min": 0.94580078125, "memory_available_kib": 21848268}
+{"run": "cpu-3-empty-cache", "time": "2026-11-23T22:11:12Z", "load_1min": 0.9501953125, "memory_available_kib": 21659064}
+{"run": "cpu-3-filled-cache", "time": "2026-11-23T22:12:06Z", "load_1min": 0.9296875, "memory_available_kib": 21881660}
+{"run": "cuda-1-empty-cache", "time": "2026-11-23T22:13:57Z", "load_1min": 0.90283203125, "memory_available_kib": 21898600}
+{"run": "cuda-1-filled-cache", "time": "2026-11-23T22:16:32Z", "load_1min": 0.921875, "memory_available_kib": 21964732}
+{"run": "cuda-2-empty-cache", "time": "2026-11-23T22:16:53Z", "load_1min": 0.8623046875, "memory_available_kib": 21816680}
+{"run": "cuda-2-filled-cache", "time": "2026-11-23T22:17:55Z", "load_1min": 0.8896484375, "memory_available_kib": 21916012}
+{"run": "cuda-3-empty-cache", "time": "2026-11-23T22:18:16Z", "load_1min": 0.8916015625, "memory_available_kib": 21813820}
+{"run": "cuda-3-filled-cache", "time": "2026-11-23T22:19:18Z", "load_1min": 0.880859375, "memory_available_kib": 21959708}

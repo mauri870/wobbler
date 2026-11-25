@@ -1,0 +1,20 @@
+{
+ "stars_g_below_13": 60940,
+ "files": 61,
+ "rows": 3366201,
+ "duplicate_rows_same_target_and_time": 428,
+ "targets_with_rows": 60940,
+ "stars_without_a_scan": 0,
+ "missing_first_10": [],
+ "targets_that_are_not_stars_of_the_sample": 0,
+ "targets_in_two_or_more_files": 0,
+ "transits_in_the_dr3_window_per_star": {
+  "min": 18,
+  "p1": 24.0,
+  "median": 52.0,
+  "p99": 110.0,
+  "max": 170
+ },
+ "stars_with_fewer_than_6_transits_in_the_window": 0,
+ "transits_over_the_whole_mission_per_star_median": 53.0
+}

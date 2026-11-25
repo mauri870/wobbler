@@ -1,0 +1,19 @@
+{
+ "source_id": 4318465066420528000,
+ "read_on": "2026-11-23",
+ "ra": "294.82786250815144",
+ "dec": "14.930979608612361",
+ "phot_g_mean_mag": "11.231088",
+ "parallax": "1.6443487033055721",
+ "parallax_error": "0.069029726",
+ "pmra": "-22.234596390420013",
+ "pmra_error": "0.062262114",
+ "pmdec": "-155.2764715345297",
+ "pmdec_error": "0.058627926",
+ "ruwe": "3.4108539",
+ "nu_eff_used_in_astrometry": "1.4755152",
+ "astrometric_params_solved": "31",
+ "astrometric_excess_noise": "0.6550494",
+ "astrometric_n_good_obs_al": "361",
+ "visibility_periods_used": "19"
+}

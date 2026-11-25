@@ -1,0 +1,151 @@
+{
+ "cpu": {
+  "first_call_empty_cache": {
+   "seconds": [
+    12.27,
+    9.83,
+    9.82
+   ],
+   "median": 9.83,
+   "min": 9.82,
+   "max": 12.27
+  },
+  "first_call_filled_cache": {
+   "seconds": [
+    1.44,
+    1.39,
+    1.41
+   ],
+   "median": 1.41,
+   "min": 1.39,
+   "max": 1.44
+  },
+  "batches_of_1000_later_calls": {
+   "seconds": [
+    0.024,
+    0.026,
+    0.025,
+    0.023,
+    0.022,
+    0.026
+   ],
+   "median": 0.0245,
+   "min": 0.022,
+   "max": 0.026
+  },
+  "one_batch_of_14400": {
+   "seconds": [
+    0.036,
+    0.03,
+    0.036,
+    0.03,
+    0.041,
+    0.032
+   ],
+   "median": 0.034,
+   "min": 0.03,
+   "max": 0.041
+  },
+  "gaiamock": {
+   "seconds": [
+    2.84,
+    2.84,
+    2.83,
+    2.88,
+    2.86,
+    2.81
+   ],
+   "median": 2.84,
+   "min": 2.81,
+   "max": 2.88
+  },
+  "speedup_over_gaiamock": {
+   "batches_of_1000_later_calls": 115.71428571428571,
+   "one_batch_of_14400": 83.38235294117646
+  }
+ },
+ "cuda": {
+  "first_call_empty_cache": {
+   "seconds": [
+    30.02,
+    28.28,
+    28.24
+   ],
+   "median": 28.28,
+   "min": 28.24,
+   "max": 30.02
+  },
+  "first_call_filled_cache": {
+   "seconds": [
+    1.8,
+    1.8,
+    1.77
+   ],
+   "median": 1.8,
+   "min": 1.77,
+   "max": 1.8
+  },
+  "batches_of_1000_later_calls": {
+   "seconds": [
+    0.027,
+    0.029,
+    0.028,
+    0.028,
+    0.028,
+    0.028
+   ],
+   "median": 0.028,
+   "min": 0.027,
+   "max": 0.029
+  },
+  "one_batch_of_14400": {
+   "seconds": [
+    0.008,
+    0.009,
+    0.008,
+    0.009,
+    0.008,
+    0.008
+   ],
+   "median": 0.008,
+   "min": 0.008,
+   "max": 0.009
+  },
+  "gaiamock": {
+   "seconds": [
+    2.84,
+    2.76,
+    2.8,
+    2.8,
+    2.85,
+    2.78
+   ],
+   "median": 2.8,
+   "min": 2.76,
+   "max": 2.85
+  },
+  "speedup_over_gaiamock": {
+   "batches_of_1000_later_calls": 101.25,
+   "one_batch_of_14400": 354.375
+  }
+ },
+ "gaiamock_all_runs": {
+  "seconds": [
+   2.84,
+   2.84,
+   2.83,
+   2.88,
+   2.86,
+   2.81,
+   2.84,
+   2.76,
+   2.8,
+   2.8,
+   2.85,
+   2.78
+  ],
+  "median": 2.835,
+  "min": 2.76,
+  "max": 2.88
+ }
+}

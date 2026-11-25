@@ -1,0 +1,64 @@
+name: tests
+
+# wobbler alone, on the CPU: the CPU build of torch (the `cpu` group), the tests and the examples of the README.
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        # the Python versions of the SPEC 0 window. uv 0.11.2 installs CPython 3.15.0a7 for "3.15", on which numpy 2.5.5 fails to import ("unknown slot ID 85", run 45151436373); uv 0.13.5 installs 3.15.1
+        python-version: ["3.13", "3.14", "3.15"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.13.5"
+          python-version: ${{ matrix.python-version }}
+          enable-cache: true
+      - name: Install wobbler with its test dependencies and the CPU build of torch
+        run: uv sync --group cpu
+      - name: Tests
+        run: uv run --group cpu pytest tests -q
+      - name: Examples
+        run: |
+          for example in examples/*.py; do
+            uv run --group cpu python "$example"
+          done
+
+  lowest:
+    # SPEC 0: the lowest versions the dependencies declare must still work, not only the newest uv resolves.
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.13.5"
+          python-version: "3.13"
+          enable-cache: true
+      - name: Install wobbler at the lowest version of every direct dependency
+        run: uv sync --resolution lowest-direct --group cpu --extra pandas --extra gaia
+      - name: Tests
+        run: uv run --no-sync --group cpu pytest tests -q
+
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.13.5"
+          python-version: "3.13"
+          enable-cache: true
+      - name: Ruff
+        run: uv run --only-dev ruff check

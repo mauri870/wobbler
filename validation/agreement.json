@@ -1,0 +1,39 @@
+{
+ "fit": {
+  "cases": 2000,
+  "epochs": 190,
+  "seed": 2,
+  "G": 13.0,
+  "fits_attempted_by_gaiamock": 2000,
+  "fits_attempted_by_wobbler": 2000,
+  "cases_where_the_two_disagree_on_whether_to_fit": 0,
+  "max_abs_difference_parameters": 1.5987211554602254e-14,
+  "max_relative_difference_parameters": 9.742226793370257e-12,
+  "max_relative_difference_ruwe_of_gaiamock": 6.661338147750939e-16,
+  "max_relative_difference_parallax_error": 8.881784197001252e-16,
+  "gaiamock_seconds_one_case_at_a_time": 0.2772874709999087
+ },
+ "kepler": {
+  "max_difference_of_sin_and_cos_of_the_eccentric_anomaly_by_eccentricity": {
+   "0.0": 1.292022044907526e-14,
+   "0.21": 1.532107773982716e-14,
+   "0.6": 1.426636586643326e-14,
+   "0.9": 3.907985046680551e-14
+  },
+  "points_per_eccentricity": 50
+ },
+ "orbit_against_recorded_gaiamock": {
+  "orbits": 6,
+  "epochs": 10,
+  "max_abs_difference_thiele_innes_constants_mas": 0.0,
+  "max_abs_difference_along_scan_offset_mas": 5.484501741648273e-14,
+  "max_relative_difference_epoch_error": 0.0,
+  "gaiamock_version_of_the_record": "1.0.0"
+ },
+ "versions": {
+  "python": "3.13.12",
+  "numpy": "2.5.5",
+  "torch": "2.15.0+cpu",
+  "gaiamock": "1.0.0"
+ }
+}

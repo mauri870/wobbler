@@ -1,0 +1,139 @@
+{
+ "quantity": "factor B on the orbit's part of the unit weight error of a simulated star with an astrometric orbit, by G: the unit weight error of Gaia DR3 is predicted as sqrt(f(G)^2 + B(G)^2 (w^2 - 1)), with w the unit weight error this package simulates for the star and f the single-star factor of uwe_factor_dr3.json",
+ "sample": "gaiadr3.nss_two_body_orbit joined to gaiadr3.gaia_source: nss_solution_type Orbital or AstroSpectroSB1, significance 10 or more, astrometric_params_solved 31, ruwe not null, parallax above 0.1 mas, nu_eff_used_in_astrometry not null, G 9 to 13; 60,940 stars (queried in 80 chunks of 0.1 mag, each checked against its count)",
+ "simulation": "for each star the scan of its position, its orbit from period, eccentricity, time of periastron and the Thiele-Innes constants, its parallax and G, its own orientation, 30 noise draws, the DR3 window, uwe_factor 1 and formal_error_factor 1; w is the median unit weight error over the draws",
+ "fit": "in bands of G of 0.25 mag, B^2 is the median over the stars with w of 1.5 or more of max(0, (UWE_archive^2 - f^2) / (w^2 - 1)), with UWE_archive = sqrt(astrometric_chi2_al / (astrometric_n_good_obs_al - 5)); B is its square root; this table is fit on all the stars",
+ "check": "fit on a seeded half of the stars (numpy default_rng(1692) permutation of the stars sorted by source_id) and tested on the other half, in both directions, the median of UWE_archive over the predicted unit weight error is within 0.95 to 1.05 in all nine bins of G (9 to 10.5, 10.5 to 10.75, 10.75 to 11, 11 to 11.25, 11.25 to 11.5, 11.5 to 11.75, 11.75 to 12, 12 to 12.5, 12.5 to 13), with the worst bin 0.008 and 0.009 off; the product f x w holds in 5 of the 9 bins with its worst bin 0.19 off",
+ "bands_note": "B holds in the band that contains G; below 9 the first band holds and from G 13 on B is f",
+ "bands_sha256": "267517affe067a8c925397bc9a7b1a1bb38cba2f0090fcd5955276c4c304ddf8",
+ "bands": [
+  {
+   "G": [
+    9.0,
+    9.25
+   ],
+   "B": 1.3104,
+   "n_archive": 859
+  },
+  {
+   "G": [
+    9.25,
+    9.5
+   ],
+   "B": 1.3098,
+   "n_archive": 1105
+  },
+  {
+   "G": [
+    9.5,
+    9.75
+   ],
+   "B": 1.3193,
+   "n_archive": 1289
+  },
+  {
+   "G": [
+    9.75,
+    10.0
+   ],
+   "B": 1.3211,
+   "n_archive": 1519
+  },
+  {
+   "G": [
+    10.0,
+    10.25
+   ],
+   "B": 1.3452,
+   "n_archive": 1606
+  },
+  {
+   "G": [
+    10.25,
+    10.5
+   ],
+   "B": 1.382,
+   "n_archive": 1938
+  },
+  {
+   "G": [
+    10.5,
+    10.75
+   ],
+   "B": 1.3808,
+   "n_archive": 2358
+  },
+  {
+   "G": [
+    10.75,
+    11.0
+   ],
+   "B": 1.4248,
+   "n_archive": 2809
+  },
+  {
+   "G": [
+    11.0,
+    11.25
+   ],
+   "B": 1.4695,
+   "n_archive": 3154
+  },
+  {
+   "G": [
+    11.25,
+    11.5
+   ],
+   "B": 1.4732,
+   "n_archive": 3428
+  },
+  {
+   "G": [
+    11.5,
+    11.75
+   ],
+   "B": 1.4059,
+   "n_archive": 4446
+  },
+  {
+   "G": [
+    11.75,
+    12.0
+   ],
+   "B": 1.3471,
+   "n_archive": 5683
+  },
+  {
+   "G": [
+    12.0,
+    12.25
+   ],
+   "B": 1.3172,
+   "n_archive": 6846
+  },
+  {
+   "G": [
+    12.25,
+    12.5
+   ],
+   "B": 1.2767,
+   "n_archive": 7458
+  },
+  {
+   "G": [
+    12.5,
+    12.75
+   ],
+   "B": 1.217,
+   "n_archive": 7896
+  },
+  {
+   "G": [
+    12.75,
+    13.0
+   ],
+   "B": 1.1783,
+   "n_archive": 7531
+  }
+ ]
+}

@@ -1,0 +1,109 @@
+[project]
+name = "wobbler"
+version = "0.1.0"
+description = "Fast forward modelling of Gaia's astrometric solutions for stars with orbital companions: RUWE, excess noise and parallax of many orbits at once, on a CPU or a GPU."
+dynamic = ["readme"]
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY/*"]
+authors = [{ name = "Mauri de Souza Meneguzzo" }]
+keywords = ["astronomy", "Gaia", "astrometry", "binaries", "RUWE", "PyTorch"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Astronomy",
+]
+# SPEC 0 (https://scientific-python.org/specs/spec-0000/, read 2026-11-23): Python 3.13 to 3.15 are in the window; 3.12 left it on 2026-10-01.
+requires-python = ">=3.13"
+dependencies = [
+    # SPEC 0 window: numpy 2.2.0 is supported until 2026-12-08, and the floor moves to 2.3.0 on that date (2.3.0 is in the window from 2025-06-07).
+    "numpy>=2.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/mauri870/wobbler"
+Source = "https://github.com/mauri870/wobbler"
+Issues = "https://github.com/mauri870/wobbler/issues"
+Changelog = "https://github.com/mauri870/wobbler/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+# the simulation, the fit, the Joker sampler and the epoch-astrometry search (everything but wobbler.light)
+torch = ["torch>=2.5"]
+# Scan.from_position (wobbler.scan) and the tests and benchmark that compare with it
+# healpy, which gaiamock needs, has no wheel for Python 3.15, so gaiamock is installed below 3.15 only
+gaiamock = ["gaiamock>=1.0.0; python_version < '3.15'"]
+# wobbler.sources.scan_from_source_id: a Gaia source id to a position
+gaia = ["astroquery>=0.4.11"]
+# DataFrame results (wobbler.results.to_table with frame=True)
+# SPEC 0 window: pandas 2.2 left it on 2026-01-19; 2.3.0 is supported until 2027-06-05.
+pandas = ["pandas>=2.3"]
+# docs/make_bh1_figure.py and docs/make_bh3_figure.py
+# SPEC 0 window: matplotlib 3.9 left it on 2026-05-15; 3.10.0 is supported until 2026-12-14.
+figure = ["matplotlib>=3.10"]
+
+[dependency-groups]
+# scipy, SPEC 0 window: 1.14 left it on 2026-06-24; 1.15.0 is supported until 2027-01-03.
+# pytest, torch, gaiamock and astroquery are not in SPEC 0; each floor is the lowest release with a cp313 wheel that passes the tests together with the others (`uv sync --resolution lowest-direct`, the job `lowest` of the CI).
+test = ["pytest>=7.0", "scipy>=1.15", "gaiamock>=1.0.0; python_version < '3.15'"]
+dev = [
+    { include-group = "test" },
+    "ruff>=0.17.3",
+]
+# The CPU build of torch, for the tests and the CI: `uv sync --group cpu`. A GPU build is installed with pip from PyTorch's own index.
+cpu = ["torch>=2.5"]
+
+[build-system]
+requires = ["hatchling>=1.27", "hatch-fancy-pypi-readme>=24.1.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata.hooks.fancy-pypi-readme]
+content-type = "text/markdown"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "README.md"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.substitutions]]
+pattern = '\]\((docs)/'
+replacement = '](https://raw.githubusercontent.com/mauri870/wobbler/main/\1/'
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/wobbler"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "examples", "benchmarks", "docs", "LICENSE", "THIRD_PARTY", "CHANGELOG.md", "CITATION.cff", "README.md", "pyproject.toml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]  # the oracle modules of the tests are imported by name
+faulthandler_timeout = 300
+markers = [
+    "gpu: asks torch for a device and so may use a GPU where there is one",
+    "torch_cpu: runs the torch package on the CPU",
+    "slow: runs for minutes",
+]
+addopts = "-m 'not slow'"
+
+[tool.uv]
+required-environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", group = "cpu" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+
+[tool.ruff.lint.per-file-ignores]
+# the package's modules and tests are carried unchanged from the code they were written with; their unused names are left as they are
+"src/wobbler/gaiafit.py" = ["F401"]
+"src/wobbler/scan.py" = ["F401"]
+"tests/*" = ["F401", "F841"]

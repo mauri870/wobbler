@@ -1,0 +1,412 @@
+{
+ "catalogue": {
+  "source_id": 4318465066420528000,
+  "read_on": "2026-11-23",
+  "ra": "294.82786250815144",
+  "dec": "14.930979608612361",
+  "phot_g_mean_mag": "11.231088",
+  "parallax": "1.6443487033055721",
+  "parallax_error": "0.069029726",
+  "pmra": "-22.234596390420013",
+  "pmra_error": "0.062262114",
+  "pmdec": "-155.2764715345297",
+  "pmdec_error": "0.058627926",
+  "ruwe": "3.4108539",
+  "nu_eff_used_in_astrometry": "1.4755152",
+  "astrometric_params_solved": "31",
+  "astrometric_excess_noise": "0.6550494",
+  "astrometric_n_good_obs_al": "361",
+  "visibility_periods_used": "19"
+ },
+ "orbit_form_among_orbit_stars": {
+  "raw_uwe_of_bh3": 4.898749187088216,
+  "ratio_of_bh3": 0.846704577327056,
+  "stars_in_the_band_of_g_11_to_11.25": 658,
+  "ratio_of_the_band_16_50_84": [
+   0.906412392555498,
+   1.0037549836886992,
+   1.116725960065418
+  ],
+  "percentile_of_bh3_in_the_band": 6.382978723404255,
+  "stars_with_w_within_20_percent": 138,
+  "percentile_of_bh3_among_them": 8.695652173913043
+ },
+ "draws": 4000,
+ "seed": 47,
+ "observations_in_the_dr3_window": 42,
+ "orbits": {
+  "combined": {
+   "period": 4253.1,
+   "ecc": 0.7291,
+   "a0": 27.39,
+   "inclination": 110.58,
+   "node": 136.236,
+   "omega": 77.34,
+   "t_peri_jd": 2458177.39,
+   "parallax": [
+    1.6933,
+    0.0164
+   ],
+   "pmra": [
+    -28.317,
+    0.067
+   ],
+   "pmdec": [
+    -155.221,
+    0.111
+   ]
+  },
+  "astrometric": {
+   "period": 4194.7,
+   "ecc": 0.7262,
+   "a0": 27.07,
+   "inclination": 110.659,
+   "node": 136.2,
+   "omega": 77.77,
+   "t_peri_jd": 2458177.28,
+   "parallax": [
+    1.6747,
+    0.0094
+   ],
+   "pmra": [
+    -28.372,
+    0.077
+   ],
+   "pmdec": [
+    -155.15,
+    0.129
+   ]
+  }
+ },
+ "results": {
+  "combined orbit, with the orbit form": {
+   "fits": 4000,
+   "uwe_factor": 1.87527859968,
+   "orbit_factor": 1.4695,
+   "ruwe_16_50_84": [
+    3.5087350692766757,
+    4.02838722187107,
+    4.1307127671693955
+   ],
+   "ln_median_predicted_over_catalogue_ruwe": 0.1664034322707474,
+   "parallax": {
+    "catalogue_minus_barycentre": -0.04895129669442788,
+    "catalogue_error": 0.069029726,
+    "barycentre_error": 0.0164,
+    "predicted_offset_16_50_84": [
+     -0.09187427563204109,
+     -0.02357553736028084,
+     0.04901540120709038
+    ],
+    "sigma_of_the_comparison": 0.09998269015981617,
+    "offset_in_catalogue_errors": -0.7091335795600272,
+    "distance_from_prediction_in_sigma": -0.25380152598000166,
+    "R2_condition_met": false
+   },
+   "pmra": {
+    "catalogue_minus_barycentre": 6.082403609579988,
+    "catalogue_error": 0.062262114,
+    "barycentre_error": 0.067,
+    "predicted_offset_16_50_84": [
+     6.168392881051251,
+     6.238366976281577,
+     6.287383769158499
+    ],
+    "sigma_of_the_comparison": 0.10911131335882118,
+    "offset_in_catalogue_errors": 97.69028416831442,
+    "distance_from_prediction_in_sigma": -1.4293968416335707,
+    "R2_condition_met": true
+   },
+   "pmdec": {
+    "catalogue_minus_barycentre": -0.055471534529687005,
+    "catalogue_error": 0.058627926,
+    "barycentre_error": 0.111,
+    "predicted_offset_16_50_84": [
+     -0.6908567745246831,
+     -0.5338101304770078,
+     -0.4786302771164469
+    ],
+    "sigma_of_the_comparison": 0.16437230684517234,
+    "offset_in_catalogue_errors": -0.946162320831322,
+    "distance_from_prediction_in_sigma": 2.9100923697437886,
+    "R2_condition_met": false
+   },
+   "R1_condition_met": false
+  },
+  "combined orbit, with the product": {
+   "fits": 4000,
+   "uwe_factor": 1.87527859968,
+   "orbit_factor": 1.4695,
+   "ruwe_16_50_84": [
+    4.401653353523849,
+    5.074735156350861,
+    5.206972310469261
+   ],
+   "ln_median_predicted_over_catalogue_ruwe": 0.3973116671202806,
+   "parallax": {
+    "catalogue_minus_barycentre": -0.04895129669442788,
+    "catalogue_error": 0.069029726,
+    "barycentre_error": 0.0164,
+    "predicted_offset_16_50_84": [
+     -0.09187427563204109,
+     -0.02357553736028084,
+     0.04901540120709038
+    ],
+    "sigma_of_the_comparison": 0.09998269015981617,
+    "offset_in_catalogue_errors": -0.7091335795600272,
+    "distance_from_prediction_in_sigma": -0.25380152598000166,
+    "R2_condition_met": false
+   },
+   "pmra": {
+    "catalogue_minus_barycentre": 6.082403609579988,
+    "catalogue_error": 0.062262114,
+    "barycentre_error": 0.067,
+    "predicted_offset_16_50_84": [
+     6.168392881051251,
+     6.238366976281577,
+     6.287383769158499
+    ],
+    "sigma_of_the_comparison": 0.10911131335882118,
+    "offset_in_catalogue_errors": 97.69028416831442,
+    "distance_from_prediction_in_sigma": -1.4293968416335707,
+    "R2_condition_met": true
+   },
+   "pmdec": {
+    "catalogue_minus_barycentre": -0.055471534529687005,
+    "catalogue_error": 0.058627926,
+    "barycentre_error": 0.111,
+    "predicted_offset_16_50_84": [
+     -0.6908567745246831,
+     -0.5338101304770078,
+     -0.4786302771164469
+    ],
+    "sigma_of_the_comparison": 0.16437230684517234,
+    "offset_in_catalogue_errors": -0.946162320831322,
+    "distance_from_prediction_in_sigma": 2.9100923697437886,
+    "R2_condition_met": false
+   },
+   "R1_condition_met": false
+  },
+  "combined orbit, uwe factor 1": {
+   "fits": 4000,
+   "uwe_factor": 1.87527859968,
+   "orbit_factor": 1.4695,
+   "ruwe_16_50_84": [
+    2.347199693034919,
+    2.7061233233381,
+    2.776639327808564
+   ],
+   "ln_median_predicted_over_catalogue_ruwe": -0.23144556776021352,
+   "parallax": {
+    "catalogue_minus_barycentre": -0.04895129669442788,
+    "catalogue_error": 0.069029726,
+    "barycentre_error": 0.0164,
+    "predicted_offset_16_50_84": [
+     -0.09187427563204109,
+     -0.02357553736028084,
+     0.04901540120709038
+    ],
+    "sigma_of_the_comparison": 0.09998269015981617,
+    "offset_in_catalogue_errors": -0.7091335795600272,
+    "distance_from_prediction_in_sigma": -0.25380152598000166,
+    "R2_condition_met": false
+   },
+   "pmra": {
+    "catalogue_minus_barycentre": 6.082403609579988,
+    "catalogue_error": 0.062262114,
+    "barycentre_error": 0.067,
+    "predicted_offset_16_50_84": [
+     6.168392881051251,
+     6.238366976281577,
+     6.287383769158499
+    ],
+    "sigma_of_the_comparison": 0.10911131335882118,
+    "offset_in_catalogue_errors": 97.69028416831442,
+    "distance_from_prediction_in_sigma": -1.4293968416335707,
+    "R2_condition_met": true
+   },
+   "pmdec": {
+    "catalogue_minus_barycentre": -0.055471534529687005,
+    "catalogue_error": 0.058627926,
+    "barycentre_error": 0.111,
+    "predicted_offset_16_50_84": [
+     -0.6908567745246831,
+     -0.5338101304770078,
+     -0.4786302771164469
+    ],
+    "sigma_of_the_comparison": 0.16437230684517234,
+    "offset_in_catalogue_errors": -0.946162320831322,
+    "distance_from_prediction_in_sigma": 2.9100923697437886,
+    "R2_condition_met": false
+   },
+   "R1_condition_met": false
+  },
+  "astrometric orbit, with the orbit form": {
+   "fits": 4000,
+   "uwe_factor": 1.87527859968,
+   "orbit_factor": 1.4695,
+   "ruwe_16_50_84": [
+    3.5382745551995014,
+    4.070370807054725,
+    4.173854240416156
+   ],
+   "ln_median_predicted_over_catalogue_ruwe": 0.17677143218381142,
+   "parallax": {
+    "catalogue_minus_barycentre": -0.03035129669442793,
+    "catalogue_error": 0.069029726,
+    "barycentre_error": 0.0094,
+    "predicted_offset_16_50_84": [
+     -0.09228202413872176,
+     -0.0232222869127916,
+     0.04989456087441857
+    ],
+    "sigma_of_the_comparison": 0.09953395603076749,
+    "offset_in_catalogue_errors": -0.4396844439803793,
+    "distance_from_prediction_in_sigma": -0.07162389666731063,
+    "R2_condition_met": false
+   },
+   "pmra": {
+    "catalogue_minus_barycentre": 6.137403609579987,
+    "catalogue_error": 0.062262114,
+    "barycentre_error": 0.077,
+    "predicted_offset_16_50_84": [
+     6.155250796445032,
+     6.225643974845772,
+     6.275099610202694
+    ],
+    "sigma_of_the_comparison": 0.1157432735822201,
+    "offset_in_catalogue_errors": 98.57364640044165,
+    "distance_from_prediction_in_sigma": -0.7623800721611839,
+    "R2_condition_met": true
+   },
+   "pmdec": {
+    "catalogue_minus_barycentre": -0.12647153452968496,
+    "catalogue_error": 0.058627926,
+    "barycentre_error": 0.129,
+    "predicted_offset_16_50_84": [
+     -0.6861597638823571,
+     -0.5266674128703244,
+     -0.4708581641623971
+    ],
+    "sigma_of_the_comparison": 0.17795203965550646,
+    "offset_in_catalogue_errors": -2.157189297975251,
+    "distance_from_prediction_in_sigma": 2.248897394575359,
+    "R2_condition_met": false
+   },
+   "R1_condition_met": false
+  },
+  "astrometric orbit, with the product": {
+   "fits": 4000,
+   "uwe_factor": 1.87527859968,
+   "orbit_factor": 1.4695,
+   "ruwe_16_50_84": [
+    4.4399946672945925,
+    5.1290015693459114,
+    5.262700032307517
+   ],
+   "ln_median_predicted_over_catalogue_ruwe": 0.4079483438769915,
+   "parallax": {
+    "catalogue_minus_barycentre": -0.03035129669442793,
+    "catalogue_error": 0.069029726,
+    "barycentre_error": 0.0094,
+    "predicted_offset_16_50_84": [
+     -0.09228202413872176,
+     -0.0232222869127916,
+     0.04989456087441857
+    ],
+    "sigma_of_the_comparison": 0.09953395603076749,
+    "offset_in_catalogue_errors": -0.4396844439803793,
+    "distance_from_prediction_in_sigma": -0.07162389666731063,
+    "R2_condition_met": false
+   },
+   "pmra": {
+    "catalogue_minus_barycentre": 6.137403609579987,
+    "catalogue_error": 0.062262114,
+    "barycentre_error": 0.077,
+    "predicted_offset_16_50_84": [
+     6.155250796445032,
+     6.225643974845772,
+     6.275099610202694
+    ],
+    "sigma_of_the_comparison": 0.1157432735822201,
+    "offset_in_catalogue_errors": 98.57364640044165,
+    "distance_from_prediction_in_sigma": -0.7623800721611839,
+    "R2_condition_met": true
+   },
+   "pmdec": {
+    "catalogue_minus_barycentre": -0.12647153452968496,
+    "catalogue_error": 0.058627926,
+    "barycentre_error": 0.129,
+    "predicted_offset_16_50_84": [
+     -0.6861597638823571,
+     -0.5266674128703244,
+     -0.4708581641623971
+    ],
+    "sigma_of_the_comparison": 0.17795203965550646,
+    "offset_in_catalogue_errors": -2.157189297975251,
+    "distance_from_prediction_in_sigma": 2.248897394575359,
+    "R2_condition_met": false
+   },
+   "R1_condition_met": false
+  },
+  "astrometric orbit, uwe factor 1": {
+   "fits": 4000,
+   "uwe_factor": 1.87527859968,
+   "orbit_factor": 1.4695,
+   "ruwe_16_50_84": [
+    2.3676453557632655,
+    2.7350611105043967,
+    2.806356363905369
+   ],
+   "ln_median_predicted_over_catalogue_ruwe": -0.22080889100350282,
+   "parallax": {
+    "catalogue_minus_barycentre": -0.03035129669442793,
+    "catalogue_error": 0.069029726,
+    "barycentre_error": 0.0094,
+    "predicted_offset_16_50_84": [
+     -0.09228202413872176,
+     -0.0232222869127916,
+     0.04989456087441857
+    ],
+    "sigma_of_the_comparison": 0.09953395603076749,
+    "offset_in_catalogue_errors": -0.4396844439803793,
+    "distance_from_prediction_in_sigma": -0.07162389666731063,
+    "R2_condition_met": false
+   },
+   "pmra": {
+    "catalogue_minus_barycentre": 6.137403609579987,
+    "catalogue_error": 0.062262114,
+    "barycentre_error": 0.077,
+    "predicted_offset_16_50_84": [
+     6.155250796445032,
+     6.225643974845772,
+     6.275099610202694
+    ],
+    "sigma_of_the_comparison": 0.1157432735822201,
+    "offset_in_catalogue_errors": 98.57364640044165,
+    "distance_from_prediction_in_sigma": -0.7623800721611839,
+    "R2_condition_met": true
+   },
+   "pmdec": {
+    "catalogue_minus_barycentre": -0.12647153452968496,
+    "catalogue_error": 0.058627926,
+    "barycentre_error": 0.129,
+    "predicted_offset_16_50_84": [
+     -0.6861597638823571,
+     -0.5266674128703244,
+     -0.4708581641623971
+    ],
+    "sigma_of_the_comparison": 0.17795203965550646,
+    "offset_in_catalogue_errors": -2.157189297975251,
+    "distance_from_prediction_in_sigma": 2.248897394575359,
+    "R2_condition_met": false
+   },
+   "R1_condition_met": false
+  }
+ },
+ "versions": {
+  "python": "3.13.12",
+  "numpy": "2.5.5",
+  "torch": "2.15.0+cpu"
+ }
+}

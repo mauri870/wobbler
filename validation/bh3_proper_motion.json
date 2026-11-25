@@ -1,0 +1,302 @@
+{
+ "catalogue_offsets": [
+  6.082403609579988,
+  -0.055471534529687005
+ ],
+ "predicted_noise_free": [
+  6.236539199346218,
+  -0.5600501785160361
+ ],
+ "catalogue_errors": [
+  0.062262114,
+  0.058627926
+ ],
+ "sensitivity": {
+  "period": {
+   "error": 98.5,
+   "change_in_the_offsets_per_error_ra_dec": [
+    -0.1436398319136476,
+    0.14359249225533688
+   ]
+  },
+  "ecc": {
+   "error": 0.0048,
+   "change_in_the_offsets_per_error_ra_dec": [
+    -0.01668301181072529,
+    -0.010163208446627436
+   ]
+  },
+  "a0": {
+   "error": 0.49,
+   "change_in_the_offsets_per_error_ra_dec": [
+    0.11157006964875471,
+    -0.010019152518154328
+   ]
+  },
+  "inclination": {
+   "error": 0.095,
+   "change_in_the_offsets_per_error_ra_dec": [
+    0.01290391430799076,
+    0.012328029387532524
+   ]
+  },
+  "node": {
+   "error": 0.128,
+   "change_in_the_offsets_per_error_ra_dec": [
+    -0.001250388562596072,
+    -0.012737074845787788
+   ]
+  },
+  "omega": {
+   "error": 0.76,
+   "change_in_the_offsets_per_error_ra_dec": [
+    -0.08229752037065197,
+    0.1166447054268076
+   ]
+  },
+  "t_peri_jd": {
+   "error": 0.88,
+   "change_in_the_offsets_per_error_ra_dec": [
+    6.71126132214539e-05,
+    -0.007361220000930757
+   ]
+  },
+  "parallax": {
+   "error": 0.0164,
+   "change_in_the_offsets_per_error_ra_dec": [
+    8.881784197001252e-15,
+    0.0
+   ]
+  },
+  "pmra": {
+   "error": 0.067,
+   "change_in_the_offsets_per_error_ra_dec": [
+    1.7763568394002505e-15,
+    0.0
+   ]
+  },
+  "pmdec": {
+   "error": 0.111,
+   "change_in_the_offsets_per_error_ra_dec": [
+    0.0,
+    -1.4210854715202004e-14
+   ]
+  }
+ },
+ "convention_check_noise_free_offsets_ra_dec": {
+  "published": [
+   6.236539199346218,
+   -0.5600501785160361
+  ],
+  "argument of periastron + 180 deg": [
+   -6.236539199346176,
+   0.5600501785161214
+  ],
+  "node + 180 deg": [
+   -6.236539199346176,
+   0.5600501785161214
+  ],
+  "inclination 180 deg - i": [
+   0.39221925226858545,
+   -6.143545723977979
+  ]
+ },
+ "sigma_elements": [
+  0.2007475167367504,
+  0.18653918168424163
+ ],
+ "sigma_total": [
+  0.2101811987683981,
+  0.19553541881328812
+ ],
+ "candidate_1_elements": {
+  "ra": {
+   "difference": -0.15413558976623065,
+   "in_sigma": -0.7333462301548438,
+   "within_2_sigma": true
+  },
+  "dec": {
+   "difference": 0.5045786439863491,
+   "in_sigma": 2.5804974211253184,
+   "within_2_sigma": false
+  }
+ },
+ "element_draws": {
+  "ra_16_50_84": [
+   6.04921569885719,
+   6.238850883873527,
+   6.440281655952085
+  ],
+  "dec_16_50_84": [
+   -0.7523451108059009,
+   -0.5631359010807131,
+   -0.3894386854701282
+  ],
+  "share_dec_at_or_above_the_catalogue": 0.0015
+ },
+ "candidate_2_epochs": {
+  "dec_offset_16_50_84": [
+   -0.6269376613026839,
+   -0.5873331701981073,
+   -0.48187494034949285
+  ],
+  "median_move_dec": -0.027282991682071156,
+  "ra_offset_16_50_84": [
+   6.195930706045969,
+   6.234834882514347,
+   6.274504008566003
+  ]
+ },
+ "ruwe_with_more_epochs": {
+  "published_run_median": 4.02838722187107,
+  "none_rejected_median": 3.9828464956476113,
+  "47_epochs_none_rejected_16_50_84_over_100_choices": [
+   3.8279753682347444,
+   3.895984304373516,
+   4.1717467130425625
+  ],
+  "47_epochs_none_rejected_min_max": [
+   3.7835477124589545,
+   4.404415584570215
+  ]
+ },
+ "candidate_3_agis_weighting": {
+  "excess_noise_of_dr3_mas": 0.6550494,
+  "noise-free, none rejected": {
+   "unweighted_ra_dec": [
+    6.236539199346218,
+    -0.5600501785160361
+   ],
+   "agis_eps_solved": {
+    "ratio_of_the_root_sum_of_squared_residuals_to_the_unweighted_fit": 1.0916301273784235,
+    "ra_16_50_84": [
+     6.233300444378873,
+     6.233300444378873,
+     6.233300444378873
+    ],
+    "dec_16_50_84": [
+     -0.9973367644641371,
+     -0.9973367644641371,
+     -0.9973367644641371
+    ],
+    "eps_median_mas": 0.45163912524687766,
+    "share_of_epochs_with_weight_under_0.2": 0.047619047619047616
+   },
+   "agis_eps_fixed": {
+    "ratio_of_the_root_sum_of_squared_residuals_to_the_unweighted_fit": 1.0578634648031502,
+    "ra_16_50_84": [
+     6.246334949526908,
+     6.246334949526908,
+     6.246334949526908
+    ],
+    "dec_16_50_84": [
+     -0.9025735658275948,
+     -0.9025735658275948,
+     -0.9025735658275948
+    ],
+    "eps_median_mas": 0.6550494,
+    "share_of_epochs_with_weight_under_0.2": 0.0
+   }
+  },
+  "noise, 10 percent rejected": {
+   "unweighted_ra_dec": [
+    6.239094259408159,
+    -0.5366673738858196
+   ],
+   "agis_eps_solved": {
+    "ratio_of_the_root_sum_of_squared_residuals_to_the_unweighted_fit": 1.0899674013969853,
+    "ra_16_50_84": [
+     6.082045823835536,
+     6.238429280587999,
+     6.305837496532639
+    ],
+    "dec_16_50_84": [
+     -1.1750737611209945,
+     -0.9716165669543528,
+     -0.8972397322404049
+    ],
+    "eps_median_mas": 0.4698657263179106,
+    "share_of_epochs_with_weight_under_0.2": 0.043072409654620614
+   },
+   "agis_eps_fixed": {
+    "ratio_of_the_root_sum_of_squared_residuals_to_the_unweighted_fit": 1.0594436381313401,
+    "ra_16_50_84": [
+     6.178500692474967,
+     6.2494947000194365,
+     6.321571678046746
+    ],
+    "dec_16_50_84": [
+     -1.0214976024199758,
+     -0.894243926009537,
+     -0.821359636698544
+    ],
+    "eps_median_mas": 0.6550494,
+    "share_of_epochs_with_weight_under_0.2": 0.0008001066808907855
+   }
+  },
+  "noise, none rejected": {
+   "unweighted_ra_dec": [
+    6.236696645620627,
+    -0.5576010216997815
+   ],
+   "agis_eps_solved": {
+    "ratio_of_the_root_sum_of_squared_residuals_to_the_unweighted_fit": 1.0910476703465588,
+    "ra_16_50_84": [
+     6.205194990252567,
+     6.233439275066543,
+     6.251881302255369
+    ],
+    "dec_16_50_84": [
+     -1.020063404184931,
+     -0.9970200315860325,
+     -0.9768696916033537
+    ],
+    "eps_median_mas": 0.4539811589021947,
+    "share_of_epochs_with_weight_under_0.2": 0.047619047619047616
+   },
+   "agis_eps_fixed": {
+    "ratio_of_the_root_sum_of_squared_residuals_to_the_unweighted_fit": 1.0572095029320379,
+    "ra_16_50_84": [
+     6.228958564593115,
+     6.247086827973721,
+     6.2639659818091316
+    ],
+    "dec_16_50_84": [
+     -0.9174365267368989,
+     -0.9015827007813897,
+     -0.8845394557822022
+    ],
+    "eps_median_mas": 0.6550494,
+    "share_of_epochs_with_weight_under_0.2": 0.0
+   }
+  }
+ },
+ "candidate_4_frame": {
+  "omega_mas_per_yr": [
+   0.019399999999999997,
+   0.0599,
+   0.0002
+  ],
+  "correction_ra_dec_mas_per_yr": [
+   0.012101484734257949,
+   -0.04275854320432963
+  ],
+  "catalogue_offsets_corrected": [
+   6.07030212484573,
+   -0.012712991325357373
+  ],
+  "difference_from_the_prediction_ra_dec": [
+   -0.1662370745004882,
+   0.5473371871906787
+  ],
+  "in_sigma": [
+   -0.7909226680340109,
+   2.7991715798216448
+  ]
+ },
+ "versions": {
+  "python": "3.13.12",
+  "numpy": "2.5.5",
+  "torch": "2.15.0+cpu"
+ }
+}

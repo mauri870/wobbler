@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use wobbler, please cite it as below."
+title: "wobbler"
+type: software
+abstract: "Fast forward modelling of Gaia's astrometric solutions for stars with orbital companions."
+authors:
+  - family-names: "Meneguzzo"
+    given-names: "Mauri de Souza"
+license: MIT
+version: 0.1.0
+date-released: 2026-11-24
+repository-code: "https://github.com/mauri870/wobbler"
+keywords:
+  - astronomy
+  - Gaia
+  - astrometry
+  - binaries
+  - RUWE

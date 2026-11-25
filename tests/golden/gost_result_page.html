@@ -1,0 +1,250 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GOST - Results</title>
+<!--  Bootstrap  -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css" integrity="sha384-jzngWsPS6op3fgRCDTESqrEJwRKck+CILhJVO5VvaAZCq8JYf8HsR/HPpBOOPZfR" crossorigin="anonymous">
+
+<!-- make pages look nice with css -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cal-heatmap@3.6.2/cal-heatmap.css" integrity="sha256-NUEfBSwV/EfyeHvGiRakfSlgBrv1XZfsGGRpUBvDTq0=" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/jquery.gritter.css" />
+<STYLE>
+body {
+        padding-top: 65px;
+        padding-bottom: 60px;
+      }
+.form-control{
+      width: 40%;
+}
+.ui-datepicker-trigger{
+/* 	padding-left: 90%; */
+}
+
+.gritter-image {
+	width:auto;
+	height:auto;
+	float:right;
+}
+
+.active {
+    font-weight: bold;
+}
+</STYLE>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//d3js.org/d3.v3.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+<script src="js/ajax.js"></script>
+<script src="js/sorttable.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.gritter.min.js" ></script>
+<script src="js/notify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	var form1 = $( "#form1" );	
+	form1.submit(function(e)
+{
+ 	$("#loading2").css({'visibility':'visible'});	//document.getElementById('loading2').style.visibility = 'visible';
+ 	$("#loading2").css({'display': 'inline'});//document.getElementById('loading2').style.display = 'inline';
+ 	$("#loading2").html('<img src=images/loading.gif>');
+ 	$('#btn-submit').button('loading');
+    var formObj = $(this);
+    var formURL = formObj.attr("action");
+    var formData = new FormData(this);
+    $.ajax({
+        url: formURL,
+    	type: 'POST',
+        data:  formData,
+        mimeType:"multipart/form-data",
+        contentType: false,
+        cache: false,
+        processData:false,
+        success: function(data1, textStatus, jqXHR)
+    {
+ 		//alert("Your report id is "+data1); 		
+ 		$.gritter.add({
+ 			// (string | mandatory) the heading of the notification
+ 			title: '<strong>Notification!<strong>',
+ 			// (string | mandatory) the text inside the notification
+ 			text: data1,
+ 			sticky: false,
+			// (int | optional) the time you want it to be alive for before fading out
+			time: '2000',
+			image: 'images/loading.gif',
+ 			before_open: function() {
+				if ($('.gritter-item-wrapper').length == 3) {
+					// Returning false prevents a new gritter from opening
+					return false;
+				}
+			},
+			before_close: function(e, manual_close) {
+				$('#btn-submit').button('reset');
+			},
+			after_close: function(){
+				if(data1.indexOf('Submitted')>0){
+					window.location.href='result.jsp';
+				}
+			}
+ 		}); 		
+    },
+     error: function(jqXHR, textStatus, errorThrown) 
+     {
+    	 $('#btn-submit').button('reset');
+     }          
+    });    
+    $("#loading2").html('');
+    e.preventDefault(); //Prevent Default action.
+});
+//form1.submit(); //Submit the form
+
+// $('.nav li a').on('click', function() {
+//     $(this).parent().parent().find('.active').removeClass('active');
+//     $(this).parent().addClass('active').css('font-weight', 'bold');
+// });
+
+});
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- More detail about a target, i.e. m33:  http://cdsportal.u-strasbg.fr/#m33 -->
+<!-- Helper for dev: http://www.bootply.com/LkVBp1V9FE -->
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.jsp">Observation Forecast Tool</a>
+        </div>
+        <div class="navbar-collapse collapse">
+        <a class="navbar-brand" target="new" rel="home" href="https://cosmos.esa.int/gaia" title="Gaia"><img style="max-width:200px; margin-left: -50px; margin-top: -30px;" src="https://www.cosmos.esa.int/documents/29201/293767/Gaia+logo+RGB+transparent.gif" class=""></a>
+          <ul class="nav navbar-nav">
+            <li class=""><a href="index.jsp" >Query</a></li>
+            <li class="active"><a href="result.jsp">Results</a></li>           
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+                   	
+          	<li class=""><a href="auth.jsp">DPAC access </a></li>    
+          	
+			<li><a href="mailto:gaia-helpdesk@cosmos.esa.int">@Support?</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+<!-- See head.jsp for body header -->
+<!-- @req 225, 240, 220 -->
+
+    <div class="container">
+    
+    <h3><abbr title="Last 10 reports are kept">Reports</abbr></h3><br>
+    <div align="center">
+
+<table class="sortable table-hover" border="1">
+<th>Input</th><th>status</th><th>message</th><th>created on</th><th>from</th><th>to</th><th>export</th>
+<tr>
+<td><a target="_new" href="heatmap.jsp?id=DA16BD639F2FC06C974E5D0460894827/1795547033">source</a></td>
+<td>COMPLETED</td>
+<td>COMPLETED - Target(s) 1 added (SM1+SM2 0 hits).</td>
+<td>Tue Nov 24 19:03:53 UTC 2026</td>
+<td>2014-08-01T00:00:00 </td>
+<td>2014-08-08T00:00:00 </td>
+<td><a target="_new" href="export.jsp?id=DA16BD639F2FC06C974E5D0460894827/1795547033&format=html">HTML</a> | <a target="_new" href="export.jsp?id=DA16BD639F2FC06C974E5D0460894827/1795547033&format=csv">CSV</a> | <a target="_new" href="export.jsp?id=DA16BD639F2FC06C974E5D0460894827/1795547033&format=csv_zip">CSV_ZIP</a> | <a target="_new" href="export.jsp?id=DA16BD639F2FC06C974E5D0460894827/1795547033&format=ics">ICS</a> | </td>
+</tr>
+</table>
+<input type="button" class="btn btn-danger" value="Clear results" onclick="ctrlCommand('CLEAR_RESULT');return false;" />
+<br/><br/><code> The predicted observation time may deviate by up to 6 hours from the actual observation time.<br/>The commanded scan law can be found as table in the Gaia Archive. The full nominal mission scanning law can be found here: https://www.cosmos.esa.int/web/gaia/full-mission-scanning-law</code>
+
+<script>
+	$(document).on('click','.notifyjs-bootstrap-base', function() {
+	  //programmatically trigger propogating hide event
+	  location.reload();
+	});
+function messageBox(mes) {
+			if(typeof mes == "undefined"){
+				return false;
+			}
+			
+			$.notify('MESSAGE RECEIVED: '+mes, 
+					{
+				  // whether to hide the notification on click
+				  clickToHide: true,
+				  // whether to auto-hide the notification
+				  autoHide: true,
+				  // if autoHide, hide after milliseconds
+				  autoHideDelay: 5000,
+				  // show the arrow pointing at the element
+				  arrowShow: true,
+				  // arrow size in pixels
+				  arrowSize: 5,
+				  // default positions
+				  elementPosition: 'bottom left',
+				  globalPosition: 'bottom right',
+				  // default style
+				  style: 'bootstrap',
+				  // default class (string or [string])
+				  className: 'warn',
+				  // show animation
+				  showAnimation: 'slideDown',
+				  // show animation duration
+				  showDuration: 1000,
+				  // hide animation
+				  hideAnimation: 'slideUp',
+				  // hide animation duration
+				  hideDuration: 200,
+				  // padding between element and notification
+				  gap: 2
+				});			
+}
+</script>
+<br>
+<div id="loadingmessage"></div>
+<br>
+</div>
+</div>	
+
+
+
+<div class="container">	
+		<div class="row force-to-bottom text-center">
+			<i>Version:22.4.3</i>
+		</div>
+</div>	
+</BODY>
+</HTML>

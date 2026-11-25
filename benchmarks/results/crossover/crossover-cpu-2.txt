@@ -1,0 +1,9 @@
+   100 cases: median     1.66 ms (   16.65 us per case), range 1.63 to 1.71 ms
+   200 cases: median     2.29 ms (   11.46 us per case), range 2.27 to 2.32 ms
+   500 cases: median     3.87 ms (    7.73 us per case), range 3.84 to 3.89 ms
+   700 cases: median     4.85 ms (    6.94 us per case), range 4.84 to 4.90 ms
+  1000 cases: median     7.94 ms (    7.94 us per case), range 7.81 to 8.95 ms
+  2000 cases: median    14.58 ms (    7.29 us per case), range 14.21 to 15.21 ms
+  5000 cases: median    32.82 ms (    6.56 us per case), range 31.91 to 34.79 ms
+ 10000 cases: median    66.27 ms (    6.63 us per case), range 63.68 to 73.88 ms
+ 20000 cases: median   127.92 ms (    6.40 us per case), range 127.10 to 132.39 ms

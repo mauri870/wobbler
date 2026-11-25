@@ -1,0 +1,75 @@
+{
+ "device": "cuda",
+ "hardware": "AMD Radeon RX 7900 XTX",
+ "python": "3.13.12",
+ "torch": "2.12.0+rocm7.2",
+ "numpy": "2.5.4",
+ "compile": true,
+ "TORCHINDUCTOR_CACHE_DIR": "benchmarks/results/crossover/cache-cuda/inductor",
+ "load_1min_at_the_end": 0.76025390625,
+ "rows": [
+  {
+   "batch_size": 100,
+   "median_seconds": 0.0034004089975496754,
+   "min_seconds": 0.003175726997142192,
+   "max_seconds": 0.004025186000944814,
+   "microseconds_per_case_median": 34.004089975496754
+  },
+  {
+   "batch_size": 200,
+   "median_seconds": 0.003036885002074996,
+   "min_seconds": 0.0029833439984940924,
+   "max_seconds": 0.0031291159975808114,
+   "microseconds_per_case_median": 15.18442501037498
+  },
+  {
+   "batch_size": 500,
+   "median_seconds": 0.0033863989992823917,
+   "min_seconds": 0.0033151690004160628,
+   "max_seconds": 0.003655892000097083,
+   "microseconds_per_case_median": 6.7727979985647835
+  },
+  {
+   "batch_size": 700,
+   "median_seconds": 0.0033072080004785676,
+   "min_seconds": 0.0032498180007678457,
+   "max_seconds": 0.003799824000452645,
+   "microseconds_per_case_median": 4.724582857826525
+  },
+  {
+   "batch_size": 1000,
+   "median_seconds": 0.003375909000169486,
+   "min_seconds": 0.0033371390018146485,
+   "max_seconds": 0.0033881689996633213,
+   "microseconds_per_case_median": 3.375909000169486
+  },
+  {
+   "batch_size": 2000,
+   "median_seconds": 0.0036337220008135773,
+   "min_seconds": 0.0035441010004433338,
+   "max_seconds": 0.003965585998230381,
+   "microseconds_per_case_median": 1.8168610004067887
+  },
+  {
+   "batch_size": 5000,
+   "median_seconds": 0.004391290000057779,
+   "min_seconds": 0.004335630001151003,
+   "max_seconds": 0.004503393000049982,
+   "microseconds_per_case_median": 0.8782580000115559
+  },
+  {
+   "batch_size": 10000,
+   "median_seconds": 0.005818107001687167,
+   "min_seconds": 0.005686995998985367,
+   "max_seconds": 0.006018750002112938,
+   "microseconds_per_case_median": 0.5818107001687167
+  },
+  {
+   "batch_size": 20000,
+   "median_seconds": 0.00875668200023938,
+   "min_seconds": 0.00856512899918016,
+   "max_seconds": 0.008944142999098403,
+   "microseconds_per_case_median": 0.437834100011969
+  }
+ ]
+}

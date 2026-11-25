@@ -1,0 +1,4 @@
+14400 cases of 191 epochs; wobbler on AMD Radeon RX 7900 XTX; python 3.13.12, torch 2.12.0+rocm7.2, numpy 2.5.4, gaiamock 1.0.0; compile True; TORCHINDUCTOR_CACHE_DIR=benchmarks/results/cache-1/inductor
+wobbler, batches of 1,000: first call 1.80 s; later calls 0.029 s (504,490 cases per second)
+wobbler, one batch of 14,400: 0.009 s (1,688,243 cases per second)
+gaiamock, one case at a time: 2.76 s (5,214 cases per second); wobbler is 96.7 times faster

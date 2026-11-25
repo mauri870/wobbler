@@ -1,0 +1,17 @@
+{
+ "stars": 2000,
+ "shift_degrees": 0.5,
+ "raw_uwe_log_ratio_width": 0.035756713915377374,
+ "parallax": {
+  "width_of_the_change_in_predicted_offset_over_predicted_error": 1.114485048993636,
+  "median": 0.0
+ },
+ "pmra": {
+  "width_of_the_change_in_predicted_offset_over_predicted_error": 1.0399875455876872,
+  "median": 0.0
+ },
+ "pmdec": {
+  "width_of_the_change_in_predicted_offset_over_predicted_error": 0.965993839472626,
+  "median": 0.0
+ }
+}

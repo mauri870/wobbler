@@ -1,0 +1,136 @@
+{
+ "gaiamock": "1.0.0",
+ "map_sha256": "bd27146c02e90cecc97348f15bdf74f0d4888b7aa2313fd10c8b79dc0c0a7cca",
+ "tolerance": 1e-11,
+ "positions": {
+  "Gaia BH1": {
+   "ra": 262.17120727595824,
+   "dec": -0.5810919626714084,
+   "G": 13.771998,
+   "pixel": 1550,
+   "median_ruwe_of_pixel": 1.1102895975112914,
+   "ccd_epochs": 452,
+   "cases": [
+    {
+     "seed": 0,
+     "epochs_kept": 404,
+     "ruwe_gaiamock": 7.654904810927847,
+     "ruwe_wobbler": 7.654904810927845,
+     "relative_difference": -2.220446049250313e-16,
+     "parallax_difference_mas": 1.7763568394002505e-15
+    },
+    {
+     "seed": 1,
+     "epochs_kept": 402,
+     "ruwe_gaiamock": 9.781648459698616,
+     "ruwe_wobbler": 9.781648459698609,
+     "relative_difference": -7.771561172376096e-16,
+     "parallax_difference_mas": 4.884981308350689e-15
+    },
+    {
+     "seed": 2,
+     "epochs_kept": 403,
+     "ruwe_gaiamock": 8.060730997392824,
+     "ruwe_wobbler": 8.060730997392849,
+     "relative_difference": 3.1086244689504383e-15,
+     "parallax_difference_mas": 4.440892098500626e-15
+    },
+    {
+     "seed": 3,
+     "epochs_kept": 404,
+     "ruwe_gaiamock": 3.605299132005996,
+     "ruwe_wobbler": 3.6052991320060053,
+     "relative_difference": 2.6645352591003757e-15,
+     "parallax_difference_mas": 5.773159728050814e-15
+    }
+   ]
+  },
+  "Gaia BH3": {
+   "ra": 294.82786250815144,
+   "dec": 14.930979608612361,
+   "G": 11.231088,
+   "pixel": 1172,
+   "median_ruwe_of_pixel": 0.8882721364498138,
+   "ccd_epochs": 400,
+   "cases": [
+    {
+     "seed": 0,
+     "epochs_kept": 359,
+     "ruwe_gaiamock": 8.759343719184361,
+     "ruwe_wobbler": 8.759343719184367,
+     "relative_difference": 6.661338147750939e-16,
+     "parallax_difference_mas": 1.7763568394002505e-15
+    },
+    {
+     "seed": 1,
+     "epochs_kept": 359,
+     "ruwe_gaiamock": 11.161460950435085,
+     "ruwe_wobbler": 11.161460950435071,
+     "relative_difference": -1.2212453270876722e-15,
+     "parallax_difference_mas": 2.220446049250313e-16
+    },
+    {
+     "seed": 2,
+     "epochs_kept": 356,
+     "ruwe_gaiamock": 11.365475100840623,
+     "ruwe_wobbler": 11.365475100840627,
+     "relative_difference": 2.220446049250313e-16,
+     "parallax_difference_mas": 6.661338147750939e-15
+    },
+    {
+     "seed": 3,
+     "epochs_kept": 356,
+     "ruwe_gaiamock": 3.2842991816367744,
+     "ruwe_wobbler": 3.2842991816367824,
+     "relative_difference": 2.4424906541753444e-15,
+     "parallax_difference_mas": 7.993605777301127e-15
+    }
+   ]
+  },
+  "pixel 2211, the highest median RUWE of the map": {
+   "ra": 16.875,
+   "dec": -27.27961273597809,
+   "G": 13.0,
+   "pixel": 2211,
+   "median_ruwe_of_pixel": 1.7508420252799988,
+   "ccd_epochs": 654,
+   "cases": [
+    {
+     "seed": 0,
+     "epochs_kept": 586,
+     "ruwe_gaiamock": 8.993024464090915,
+     "ruwe_wobbler": 8.993024464090908,
+     "relative_difference": -7.771561172376096e-16,
+     "parallax_difference_mas": 7.993605777301127e-15
+    },
+    {
+     "seed": 1,
+     "epochs_kept": 586,
+     "ruwe_gaiamock": 8.168378639379744,
+     "ruwe_wobbler": 8.168378639379734,
+     "relative_difference": -1.3322676295501878e-15,
+     "parallax_difference_mas": 1.7763568394002505e-15
+    },
+    {
+     "seed": 2,
+     "epochs_kept": 591,
+     "ruwe_gaiamock": 7.031178403919885,
+     "ruwe_wobbler": 7.0311784039198955,
+     "relative_difference": 1.5543122344752192e-15,
+     "parallax_difference_mas": 1.9984014443252818e-14
+    },
+    {
+     "seed": 3,
+     "epochs_kept": 589,
+     "ruwe_gaiamock": 3.3096686453884354,
+     "ruwe_wobbler": 3.309668645388437,
+     "relative_difference": 4.440892098500626e-16,
+     "parallax_difference_mas": 2.886579864025407e-14
+    }
+   ]
+  }
+ },
+ "largest_relative_difference_of_the_ruwe": 3.1086244689504383e-15,
+ "largest_parallax_difference_mas": 2.886579864025407e-14,
+ "agree": true
+}

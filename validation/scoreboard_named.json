@@ -1,0 +1,129 @@
+{
+ "BH1": {
+  "archive_ruwe": 7.6376343,
+  "ruwe_16_50_84": [
+   6.772380825026727,
+   6.975718731109177,
+   7.104534982948694
+  ],
+  "ln_median_predicted_over_archive_ruwe": -0.09065254234577126,
+  "draws_that_fit": 1000,
+  "parallax": {
+   "archive_offset": -0.025463004848108373,
+   "predicted_offset_16_50_84": [
+    0.018765760934722542,
+    0.1609449891853738,
+    0.2944648849885083
+   ],
+   "archive_error": 0.116677545,
+   "predicted_error": 0.13981721960697846,
+   "archive_over_predicted_offset": -0.15820936692089554
+  },
+  "pmra": {
+   "archive_offset": 1.2651541969676092,
+   "predicted_offset_16_50_84": [
+    0.4446208274654572,
+    0.5685760339283172,
+    0.6809789318473762
+   ],
+   "archive_error": 0.122567564,
+   "predicted_error": 0.12799994177930954,
+   "archive_over_predicted_offset": 2.2251275493034806
+  },
+  "pmdec": {
+   "archive_offset": 0.3699421579773876,
+   "predicted_offset_16_50_84": [
+    0.16092085038503529,
+    0.25529875630814336,
+    0.3578707789427581
+   ],
+   "archive_error": 0.093389355,
+   "predicted_error": 0.11054282386161843,
+   "archive_over_predicted_offset": 1.4490558564682965
+  }
+ },
+ "BH2": {
+  "archive_ruwe": 9.220705,
+  "ruwe_16_50_84": [
+   12.255636898119441,
+   12.466489419258336,
+   12.624302096997596
+  ],
+  "ln_median_predicted_over_archive_ruwe": 0.3015926990912464,
+  "draws_that_fit": 1000,
+  "parallax": {
+   "archive_offset": -0.1870933925983541,
+   "predicted_offset_16_50_84": [
+    -0.9115502386979641,
+    -0.7458215586827248,
+    -0.6136868017591462
+   ],
+   "archive_error": 0.10447467,
+   "predicted_error": 0.1526255220326223,
+   "archive_over_predicted_offset": 0.25085543642476593
+  },
+  "pmra": {
+   "archive_offset": 2.7224297947001252,
+   "predicted_offset_16_50_84": [
+    2.7879675547013743,
+    2.8705184667256156,
+    2.9722344539828986
+   ],
+   "archive_error": 0.074546315,
+   "predicted_error": 0.10098635004312487,
+   "archive_over_predicted_offset": 0.9484104792419558
+  },
+  "pmdec": {
+   "archive_offset": -0.8987368604816055,
+   "predicted_offset_16_50_84": [
+    0.11471223367378956,
+    0.1945881429783551,
+    0.28637745075263804
+   ],
+   "archive_error": 0.079491615,
+   "predicted_error": 0.10041896673473272,
+   "archive_over_predicted_offset": -4.618661994125592
+  }
+ },
+ "BH3": {
+  "archive_ruwe": 3.4108539,
+  "ruwe_16_50_84": [
+   3.521756085299474,
+   4.043680574976049,
+   4.146448820504796
+  ],
+  "ln_median_predicted_over_archive_ruwe": 0.17019264013879015,
+  "draws_that_fit": 4000,
+  "orbit": "the combined solution of the published orbit (validation/bh3.py); DR3 has no nss_two_body_orbit row",
+  "parallax": {
+   "archive_offset": -0.04895129669442788,
+   "predicted_offset_16_50_84": [
+    -0.09187427563204109,
+    -0.02357553736028084,
+    0.04901540120709038
+   ],
+   "archive_error": 0.069029726,
+   "archive_over_predicted_offset": 2.076359742997805
+  },
+  "pmra": {
+   "archive_offset": 6.082403609579988,
+   "predicted_offset_16_50_84": [
+    6.168392881051251,
+    6.238366976281577,
+    6.287383769158499
+   ],
+   "archive_error": 0.062262114,
+   "archive_over_predicted_offset": 0.9749993279820558
+  },
+  "pmdec": {
+   "archive_offset": -0.055471534529687005,
+   "predicted_offset_16_50_84": [
+    -0.6908567745246831,
+    -0.5338101304770078,
+    -0.4786302771164469
+   ],
+   "archive_error": 0.058627926,
+   "archive_over_predicted_offset": 0.1039162266930344
+  }
+ }
+}

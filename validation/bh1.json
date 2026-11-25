@@ -1,0 +1,37 @@
+{
+ "catalogue_ruwe": 7.6376343,
+ "observations_in_the_dr3_window": 50,
+ "uwe_factor": 1.0174176238519999,
+ "orbit_factor": 1.0174176238519999,
+ "results": {
+  "the default of the package (orbit form)": {
+   "ruwe_16_50_84": [
+    6.802025261190974,
+    6.996718047304267,
+    7.125025034044702
+   ],
+   "ln_median_over_catalogue": -0.08764671990566403,
+   "within_0.14": true
+  },
+  "the product f x w": {
+   "ruwe_16_50_84": [
+    6.802025261190975,
+    6.996718047304267,
+    7.125025034044702
+   ],
+   "ln_median_over_catalogue": -0.08764671990566403,
+   "within_0.14": true
+  },
+  "raw simulation": {
+   "ruwe_16_50_84": [
+    6.685578371876562,
+    6.876938125776023,
+    7.0030485682653705
+   ],
+   "ln_median_over_catalogue": -0.10491439560367724,
+   "within_0.14": true
+  }
+ },
+ "draws": 4000,
+ "seed": 11
+}

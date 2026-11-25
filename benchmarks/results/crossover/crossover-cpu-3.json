@@ -1,0 +1,75 @@
+{
+ "device": "cpu",
+ "hardware": "AMD Ryzen 9 9950X3D 16-Core Processor (16 threads)",
+ "python": "3.13.12",
+ "torch": "2.15.0+cpu",
+ "numpy": "2.5.5",
+ "compile": true,
+ "TORCHINDUCTOR_CACHE_DIR": "benchmarks/results/crossover/cache-cpu/inductor",
+ "load_1min_at_the_end": 1.65234375,
+ "rows": [
+  {
+   "batch_size": 100,
+   "median_seconds": 0.0017362700018566102,
+   "min_seconds": 0.0017159689996333327,
+   "max_seconds": 0.001750279996485915,
+   "microseconds_per_case_median": 17.362700018566102
+  },
+  {
+   "batch_size": 200,
+   "median_seconds": 0.002479318998666713,
+   "min_seconds": 0.0024571379981352948,
+   "max_seconds": 0.0025163290010823403,
+   "microseconds_per_case_median": 12.396594993333565
+  },
+  {
+   "batch_size": 500,
+   "median_seconds": 0.004339919996709796,
+   "min_seconds": 0.0043232589996478055,
+   "max_seconds": 0.004369049998786068,
+   "microseconds_per_case_median": 8.679839993419591
+  },
+  {
+   "batch_size": 700,
+   "median_seconds": 0.0054898029993637465,
+   "min_seconds": 0.0054718829997000284,
+   "max_seconds": 0.005509053000423592,
+   "microseconds_per_case_median": 7.842575713376781
+  },
+  {
+   "batch_size": 1000,
+   "median_seconds": 0.008520428000338143,
+   "min_seconds": 0.008449695997114759,
+   "max_seconds": 0.008650608997413656,
+   "microseconds_per_case_median": 8.520428000338143
+  },
+  {
+   "batch_size": 2000,
+   "median_seconds": 0.013676236998435343,
+   "min_seconds": 0.013373622998187784,
+   "max_seconds": 0.013810357002512319,
+   "microseconds_per_case_median": 6.838118499217671
+  },
+  {
+   "batch_size": 5000,
+   "median_seconds": 0.03270801400140044,
+   "min_seconds": 0.03165460200034431,
+   "max_seconds": 0.033996058999036904,
+   "microseconds_per_case_median": 6.541602800280089
+  },
+  {
+   "batch_size": 10000,
+   "median_seconds": 0.06245860399940284,
+   "min_seconds": 0.06158456499906606,
+   "max_seconds": 0.06303699099953519,
+   "microseconds_per_case_median": 6.245860399940284
+  },
+  {
+   "batch_size": 20000,
+   "median_seconds": 0.12722378599937656,
+   "min_seconds": 0.1245406450034352,
+   "max_seconds": 0.13001289699968765,
+   "microseconds_per_case_median": 6.361189299968828
+  }
+ ]
+}

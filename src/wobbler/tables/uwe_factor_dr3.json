@@ -1,0 +1,336 @@
+{
+ "quantity": "factor between Gaia DR3's unit weight error and the one this package simulates for a single star, by G: the median unit weight error sqrt(astrometric_chi2_al / (astrometric_n_good_obs_al - 5)) of ordinary stars in a band of G over this package's single-star unit weight error in the same band",
+ "sample": "gaiadr3.gaia_source, astrometric_params_solved = 31, nu_eff_used_in_astrometry 1.40 to 1.55, astrometric_n_good_obs_al > 20, up to 5,000 rows per band by random_index (random_index < 200000000 from G 8), bands of 0.5 mag from G 4.5 to 19 and of 0.1 mag from G 10.5 to 12",
+ "bands_note": "band centres are the nodes of the linear interpolation; below the first and above the last centre f holds the end value",
+ "bands_sha256": "6b99f278aed334622df57e45d46991ae451178e95fa506e16e9538ad7c45211a",
+ "bands": [
+  {
+   "G": [
+    4.5,
+    5.0
+   ],
+   "f": 8.126619,
+   "n_archive": 275
+  },
+  {
+   "G": [
+    5.0,
+    5.5
+   ],
+   "f": 5.328607,
+   "n_archive": 485
+  },
+  {
+   "G": [
+    5.5,
+    6.0
+   ],
+   "f": 2.485325,
+   "n_archive": 930
+  },
+  {
+   "G": [
+    6.0,
+    6.5
+   ],
+   "f": 1.862427,
+   "n_archive": 1865
+  },
+  {
+   "G": [
+    6.5,
+    7.0
+   ],
+   "f": 1.67658,
+   "n_archive": 3149
+  },
+  {
+   "G": [
+    7.0,
+    7.5
+   ],
+   "f": 1.549077,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    7.5,
+    8.0
+   ],
+   "f": 1.468313,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    8.0,
+    8.5
+   ],
+   "f": 1.450903,
+   "n_archive": 1783
+  },
+  {
+   "G": [
+    8.5,
+    9.0
+   ],
+   "f": 1.420997,
+   "n_archive": 2896
+  },
+  {
+   "G": [
+    9.0,
+    9.5
+   ],
+   "f": 1.375831,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    9.5,
+    10.0
+   ],
+   "f": 1.380723,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    10.0,
+    10.5
+   ],
+   "f": 1.452849,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    10.5,
+    10.6
+   ],
+   "f": 1.387448,
+   "n_archive": 3011
+  },
+  {
+   "G": [
+    10.6,
+    10.7
+   ],
+   "f": 1.359144,
+   "n_archive": 3316
+  },
+  {
+   "G": [
+    10.7,
+    10.8
+   ],
+   "f": 1.37238,
+   "n_archive": 3724
+  },
+  {
+   "G": [
+    10.8,
+    10.9
+   ],
+   "f": 1.446579,
+   "n_archive": 4196
+  },
+  {
+   "G": [
+    10.9,
+    11.0
+   ],
+   "f": 1.573371,
+   "n_archive": 4689
+  },
+  {
+   "G": [
+    11.0,
+    11.1
+   ],
+   "f": 1.687285,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.1,
+    11.2
+   ],
+   "f": 1.803,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.2,
+    11.3
+   ],
+   "f": 1.892136,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.3,
+    11.4
+   ],
+   "f": 1.910094,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.4,
+    11.5
+   ],
+   "f": 1.832575,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.5,
+    11.6
+   ],
+   "f": 1.731786,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.6,
+    11.7
+   ],
+   "f": 1.597124,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.7,
+    11.8
+   ],
+   "f": 1.526682,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.8,
+    11.9
+   ],
+   "f": 1.458215,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.9,
+    12.0
+   ],
+   "f": 1.402899,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    12.0,
+    12.5
+   ],
+   "f": 1.261824,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    12.5,
+    13.0
+   ],
+   "f": 1.267534,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    13.0,
+    13.5
+   ],
+   "f": 1.039042,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    13.5,
+    14.0
+   ],
+   "f": 1.017372,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    14.0,
+    14.5
+   ],
+   "f": 1.018409,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    14.5,
+    15.0
+   ],
+   "f": 1.02751,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    15.0,
+    15.5
+   ],
+   "f": 1.032005,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    15.5,
+    16.0
+   ],
+   "f": 1.032599,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    16.0,
+    16.5
+   ],
+   "f": 1.031724,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    16.5,
+    17.0
+   ],
+   "f": 1.033857,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    17.0,
+    17.5
+   ],
+   "f": 1.031378,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    17.5,
+    18.0
+   ],
+   "f": 1.033105,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    18.0,
+    18.5
+   ],
+   "f": 1.032009,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    18.5,
+    19.0
+   ],
+   "f": 1.030992,
+   "n_archive": 5000
+  }
+ ]
+}

@@ -1,0 +1,529 @@
+{
+ "camp": {
+  "abs_sum": 5199.790134380174,
+  "shape": [
+   4,
+   500
+  ]
+ },
+ "companion_mass": {
+  "abs_sum": 38894.18637625255,
+  "shape": [
+   300
+  ]
+ },
+ "fit_a0_mas": {
+  "abs_sum": 208.208846006731,
+  "shape": [
+   100
+  ]
+ },
+ "fit_const_chi2": {
+  "abs_sum": 12025950.545840347,
+  "shape": [
+   100
+  ]
+ },
+ "fit_const_degrees_of_freedom": {
+  "abs_sum": 16707.0,
+  "shape": [
+   100
+  ]
+ },
+ "fit_const_error": {
+  "abs_sum": 0.045961940777125586,
+  "shape": []
+ },
+ "fit_const_excess_noise": {
+  "abs_sum": 107.58911325118603,
+  "shape": [
+   100
+  ]
+ },
+ "fit_const_n_epochs": {
+  "abs_sum": 17207.0,
+  "shape": [
+   100
+  ]
+ },
+ "fit_const_ok": {
+  "abs_sum": 100.0,
+  "shape": [
+   100
+  ]
+ },
+ "fit_const_parameter_errors": {
+  "abs_sum": 24.432281011727074,
+  "shape": [
+   100,
+   5
+  ]
+ },
+ "fit_const_parameters": {
+  "abs_sum": 1233.5822907449256,
+  "shape": [
+   100,
+   5
+  ]
+ },
+ "fit_const_ruwe": {
+  "abs_sum": 828.0067074960351,
+  "shape": [
+   100
+  ]
+ },
+ "fit_const_visibility_periods": {
+  "abs_sum": 8711.0,
+  "shape": [
+   100
+  ]
+ },
+ "fit_ecc": {
+  "abs_sum": 42.513398935765444,
+  "shape": [
+   100
+  ]
+ },
+ "fit_error": {
+  "abs_sum": 0.045961940777125586,
+  "shape": []
+ },
+ "fit_extra": {
+  "abs_sum": 1.9287736132657243,
+  "shape": [
+   100
+  ]
+ },
+ "fit_inclination": {
+  "abs_sum": 93.69163683441715,
+  "shape": [
+   100
+  ]
+ },
+ "fit_jd": {
+  "abs_sum": 469362960.8261885,
+  "shape": [
+   191
+  ]
+ },
+ "fit_keep": {
+  "abs_sum": 17207.0,
+  "shape": [
+   100,
+   191
+  ]
+ },
+ "fit_node": {
+  "abs_sum": 314.96868424319246,
+  "shape": [
+   100
+  ]
+ },
+ "fit_observed": {
+  "abs_sum": 67178.34849834105,
+  "shape": [
+   100,
+   191
+  ]
+ },
+ "fit_omega": {
+  "abs_sum": 292.63637399719795,
+  "shape": [
+   100
+  ]
+ },
+ "fit_parallax": {
+  "abs_sum": 232.03560634128505,
+  "shape": [
+   100
+  ]
+ },
+ "fit_period_days": {
+  "abs_sum": 50045.59662212352,
+  "shape": [
+   100
+  ]
+ },
+ "fit_plx": {
+  "abs_sum": 84.41262563613851,
+  "shape": [
+   191
+  ]
+ },
+ "fit_pmdec": {
+  "abs_sum": 431.4190181276277,
+  "shape": [
+   100
+  ]
+ },
+ "fit_pmra": {
+  "abs_sum": 437.1725590169732,
+  "shape": [
+   100
+  ]
+ },
+ "fit_psi": {
+  "abs_sum": 326.86203347220663,
+  "shape": [
+   191
+  ]
+ },
+ "fit_t_peri_days": {
+  "abs_sum": 20480.493865551165,
+  "shape": [
+   100
+  ]
+ },
+ "fit_vary_chi2": {
+  "abs_sum": 10160010.740868432,
+  "shape": [
+   100
+  ]
+ },
+ "fit_vary_degrees_of_freedom": {
+  "abs_sum": 16707.0,
+  "shape": [
+   100
+  ]
+ },
+ "fit_vary_error": {
+  "abs_sum": 9.99215044917394,
+  "shape": [
+   191
+  ]
+ },
+ "fit_vary_excess_noise": {
+  "abs_sum": 107.73834862455762,
+  "shape": [
+   100
+  ]
+ },
+ "fit_vary_n_epochs": {
+  "abs_sum": 17207.0,
+  "shape": [
+   100
+  ]
+ },
+ "fit_vary_ok": {
+  "abs_sum": 100.0,
+  "shape": [
+   100
+  ]
+ },
+ "fit_vary_parameter_errors": {
+  "abs_sum": 24.421546117148374,
+  "shape": [
+   100,
+   5
+  ]
+ },
+ "fit_vary_parameters": {
+  "abs_sum": 1234.465728060349,
+  "shape": [
+   100,
+   5
+  ]
+ },
+ "fit_vary_ruwe": {
+  "abs_sum": 762.8627692666597,
+  "shape": [
+   100
+  ]
+ },
+ "fit_vary_visibility_periods": {
+  "abs_sum": 8711.0,
+  "shape": [
+   100
+  ]
+ },
+ "fit_z_err": {
+  "abs_sum": 15217.211198240702,
+  "shape": [
+   100,
+   191
+  ]
+ },
+ "fit_z_extra": {
+  "abs_sum": 15308.937243072864,
+  "shape": [
+   100,
+   191
+  ]
+ },
+ "kepler_E": {
+  "abs_sum": 10368.89668147614,
+  "shape": [
+   2000
+  ]
+ },
+ "kepler_ecc": {
+  "abs_sum": 934.834223113458,
+  "shape": [
+   2000
+  ]
+ },
+ "kepler_mean": {
+  "abs_sum": 10193.220767771894,
+  "shape": [
+   2000
+  ]
+ },
+ "mass_ecc": {
+  "abs_sum": 131.3356207530611,
+  "shape": [
+   300
+  ]
+ },
+ "mass_f": {
+  "abs_sum": 458.241611996162,
+  "shape": [
+   300
+  ]
+ },
+ "mass_function": {
+  "abs_sum": 1162.286854821216,
+  "shape": [
+   300
+  ]
+ },
+ "mass_incl": {
+  "abs_sum": 287.79151567249085,
+  "shape": [
+   300
+  ]
+ },
+ "mass_k": {
+  "abs_sum": 12315.097853769537,
+  "shape": [
+   300
+  ]
+ },
+ "mass_m1": {
+  "abs_sum": 374.0112938921783,
+  "shape": [
+   300
+  ]
+ },
+ "mass_period": {
+  "abs_sum": 138734.48905571544,
+  "shape": [
+   300
+  ]
+ },
+ "min_companion_mass": {
+  "abs_sum": 873.099047622501,
+  "shape": [
+   300
+  ]
+ },
+ "pc_a0": {
+  "abs_sum": 1511.5449852151569,
+  "shape": [
+   500
+  ]
+ },
+ "pc_t": {
+  "abs_sum": 5497.956069979458,
+  "shape": [
+   500,
+   9
+  ]
+ },
+ "pc_xy": {
+  "abs_sum": 15529.474338591106,
+  "shape": [
+   2,
+   500,
+   9
+  ]
+ },
+ "rv": {
+  "abs_sum": 26455.540868381715,
+  "shape": [
+   500,
+   7
+  ]
+ },
+ "rv_ecc": {
+  "abs_sum": 227.28275796003246,
+  "shape": [
+   500
+  ]
+ },
+ "rv_k": {
+  "abs_sum": 7729.351299340718,
+  "shape": [
+   500
+  ]
+ },
+ "rv_omega": {
+  "abs_sum": 1608.2442051320675,
+  "shape": [
+   500
+  ]
+ },
+ "rv_period": {
+  "abs_sum": 230860.65221315675,
+  "shape": [
+   500
+  ]
+ },
+ "rv_t": {
+  "abs_sum": 1312832.0205957033,
+  "shape": [
+   500,
+   7
+  ]
+ },
+ "rv_tp": {
+  "abs_sum": 99648.17458629713,
+  "shape": [
+   500
+  ]
+ },
+ "share_inclined": {
+  "abs_sum": 12.098172482031305,
+  "shape": [
+   30
+  ]
+ },
+ "sim_DR2_excess_noise": {
+  "abs_sum": 560.1991598572581,
+  "shape": [
+   20,
+   10
+  ]
+ },
+ "sim_DR2_n_epochs": {
+  "abs_sum": 21546.0,
+  "shape": [
+   20,
+   10
+  ]
+ },
+ "sim_DR2_ok": {
+  "abs_sum": 200.0,
+  "shape": [
+   20,
+   10
+  ]
+ },
+ "sim_DR2_parallax_mas": {
+  "abs_sum": 453.00728764273197,
+  "shape": [
+   20,
+   10
+  ]
+ },
+ "sim_DR2_ruwe": {
+  "abs_sum": 4300.769996339965,
+  "shape": [
+   20,
+   10
+  ]
+ },
+ "sim_DR3_excess_noise": {
+  "abs_sum": 570.7036485490185,
+  "shape": [
+   20,
+   10
+  ]
+ },
+ "sim_DR3_n_epochs": {
+  "abs_sum": 34300.0,
+  "shape": [
+   20,
+   10
+  ]
+ },
+ "sim_DR3_ok": {
+  "abs_sum": 200.0,
+  "shape": [
+   20,
+   10
+  ]
+ },
+ "sim_DR3_parallax_mas": {
+  "abs_sum": 462.55664116082636,
+  "shape": [
+   20,
+   10
+  ]
+ },
+ "sim_DR3_ruwe": {
+  "abs_sum": 4415.8524860042,
+  "shape": [
+   20,
+   10
+  ]
+ },
+ "sim_incl": {
+  "abs_sum": 199.83880221828576,
+  "shape": [
+   20,
+   10
+  ]
+ },
+ "sim_node": {
+  "abs_sum": 636.0901116112208,
+  "shape": [
+   20,
+   10
+  ]
+ },
+ "sim_parallax": {
+  "abs_sum": 45.0,
+  "shape": [
+   20
+  ]
+ },
+ "ti_ABFG": {
+  "abs_sum": 2674.0156550571874,
+  "shape": [
+   4,
+   500
+  ]
+ },
+ "ti_a": {
+  "abs_sum": 1317.8453910446028,
+  "shape": [
+   500
+  ]
+ },
+ "ti_incl": {
+  "abs_sum": 760.2967783281694,
+  "shape": [
+   500
+  ]
+ },
+ "ti_node": {
+  "abs_sum": 1561.092293925553,
+  "shape": [
+   500
+  ]
+ },
+ "ti_omega": {
+  "abs_sum": 1623.3875241536448,
+  "shape": [
+   500
+  ]
+ },
+ "true_anomaly": {
+  "abs_sum": 529.3867705014541,
+  "shape": [
+   300
+  ]
+ },
+ "true_anomaly_ecc": {
+  "abs_sum": 140.89126865552055,
+  "shape": [
+   300
+  ]
+ },
+ "true_anomaly_in": {
+  "abs_sum": 416.8983133373744,
+  "shape": [
+   300
+  ]
+ }
+}

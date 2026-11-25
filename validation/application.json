@@ -1,0 +1,202 @@
+{
+ "mass_function_solar": 4.057083527705645,
+ "a1_sin_i_au": 1.0155673877250482,
+ "minimum_companion_mass_solar": 5.53498151075552,
+ "draws": 20000,
+ "seed": 11,
+ "catalogue": {
+  "ra": 262.17120727595824,
+  "dec": -0.5810919626714084,
+  "G": 13.771998,
+  "parallax": 2.069988584035135,
+  "ruwe": 7.6376343,
+  "nu_eff": 1.4811925
+ },
+ "orbit": {
+  "period": 185.59,
+  "ecc": 0.451,
+  "t_peri": -1.1,
+  "omega": 0.2234021442552742,
+  "k_star": 66.7,
+  "m_star": 0.93
+ },
+ "hypotheses": {
+  "single star": {
+   "fits": 20000,
+   "ruwe_16_50_84": [
+    1.0027638541770545,
+    1.0146164031014617,
+    1.0279873809775222
+   ],
+   "share_at_or_above_catalogue_ruwe": 0.0,
+   "share_within_5_percent_of_catalogue_ruwe": 0.0,
+   "share_within_10_percent_of_catalogue_ruwe": 0.0,
+   "share_within_20_percent_of_catalogue_ruwe": 0.0
+  },
+  "dark companion": {
+   "fits": 20000,
+   "ruwe_16_50_84": [
+    3.5676197979681343,
+    5.10231916753861,
+    10.345338838995936
+   ],
+   "share_at_or_above_catalogue_ruwe": 0.26515,
+   "share_within_5_percent_of_catalogue_ruwe": 0.04015,
+   "share_within_10_percent_of_catalogue_ruwe": 0.08285,
+   "share_within_20_percent_of_catalogue_ruwe": 0.1793,
+   "companion_mass_16_50_84_solar": [
+    5.70516187242183,
+    7.813563981572571,
+    27.295903598190606
+   ]
+  },
+  "luminous companion, flux ratio (M2/M1)^3": {
+   "fits": 20000,
+   "ruwe_16_50_84": [
+    1.0653740812077241,
+    1.13462127641382,
+    1.2106716437431022
+   ],
+   "share_at_or_above_catalogue_ruwe": 0.0,
+   "share_within_5_percent_of_catalogue_ruwe": 0.0,
+   "share_within_10_percent_of_catalogue_ruwe": 0.0,
+   "share_within_20_percent_of_catalogue_ruwe": 0.0,
+   "companion_mass_16_50_84_solar": [
+    5.70516187242183,
+    7.813563981572571,
+    27.295903598190606
+   ]
+  },
+  "luminous companion, flux ratio (M2/M1)^4": {
+   "fits": 20000,
+   "ruwe_16_50_84": [
+    1.0663992368613404,
+    1.137889759626173,
+    1.2178688229908103
+   ],
+   "share_at_or_above_catalogue_ruwe": 0.0,
+   "share_within_5_percent_of_catalogue_ruwe": 0.0,
+   "share_within_10_percent_of_catalogue_ruwe": 0.0,
+   "share_within_20_percent_of_catalogue_ruwe": 0.0,
+   "companion_mass_16_50_84_solar": [
+    5.70516187242183,
+    7.813563981572571,
+    27.295903598190606
+   ]
+  },
+  "luminous companion, flux ratio (M2/M1)^5": {
+   "fits": 20000,
+   "ruwe_16_50_84": [
+    1.0666631281301266,
+    1.138394948410244,
+    1.2187931534952534
+   ],
+   "share_at_or_above_catalogue_ruwe": 0.0,
+   "share_within_5_percent_of_catalogue_ruwe": 0.0,
+   "share_within_10_percent_of_catalogue_ruwe": 0.0,
+   "share_within_20_percent_of_catalogue_ruwe": 0.0,
+   "companion_mass_16_50_84_solar": [
+    5.70516187242183,
+    7.813563981572571,
+    27.295903598190606
+   ]
+  }
+ },
+ "flux_ratio_scan": [
+  {
+   "flux_ratio": 0.0,
+   "ruwe_16_50_84": [
+    3.5676197979681343,
+    5.10231916753861,
+    10.345338838995936
+   ],
+   "share_at_or_above_catalogue_ruwe": 0.26515
+  },
+  {
+   "flux_ratio": 0.01,
+   "ruwe_16_50_84": [
+    3.5299654575831934,
+    5.0473360004698655,
+    10.24050856612825
+   ],
+   "share_at_or_above_catalogue_ruwe": 0.261
+  },
+  {
+   "flux_ratio": 0.02,
+   "ruwe_16_50_84": [
+    3.493261093657921,
+    4.993243311727696,
+    10.137939233810407
+   ],
+   "share_at_or_above_catalogue_ruwe": 0.25685
+  },
+  {
+   "flux_ratio": 0.05,
+   "ruwe_16_50_84": [
+    3.3885054944086073,
+    4.839287671734876,
+    9.840845352695451
+   ],
+   "share_at_or_above_catalogue_ruwe": 0.24555
+  },
+  {
+   "flux_ratio": 0.1,
+   "ruwe_16_50_84": [
+    3.2253474422640056,
+    4.602871644598174,
+    9.37862823426883
+   ],
+   "share_at_or_above_catalogue_ruwe": 0.2287
+  },
+  {
+   "flux_ratio": 0.2,
+   "ruwe_16_50_84": [
+    2.9441772165613225,
+    4.189837314209173,
+    8.57595806765775
+   ],
+   "share_at_or_above_catalogue_ruwe": 0.1957
+  },
+  {
+   "flux_ratio": 0.3,
+   "ruwe_16_50_84": [
+    2.707793816697906,
+    3.842301092698324,
+    7.89873678419306
+   ],
+   "share_at_or_above_catalogue_ruwe": 0.1691
+  },
+  {
+   "flux_ratio": 0.5,
+   "ruwe_16_50_84": [
+    2.3369178047265198,
+    3.2908934478151615,
+    6.818229510360211
+   ],
+   "share_at_or_above_catalogue_ruwe": 0.1318
+  },
+  {
+   "flux_ratio": 1.0,
+   "ruwe_16_50_84": [
+    1.7665120180530685,
+    2.4157062389184576,
+    5.064824597894998
+   ],
+   "share_at_or_above_catalogue_ruwe": 0.07795
+  },
+  {
+   "flux_ratio": 2.0,
+   "ruwe_16_50_84": [
+    1.2825065312531037,
+    1.615097814405613,
+    3.340996918851086
+   ],
+   "share_at_or_above_catalogue_ruwe": 0.037
+  }
+ ],
+ "versions": {
+  "python": "3.13.12",
+  "numpy": "2.5.5",
+  "torch": "2.15.0+cpu"
+ }
+}
