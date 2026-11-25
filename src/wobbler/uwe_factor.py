@@ -10,17 +10,24 @@ from pathlib import Path
 import numpy as np
 
 TABLE = Path(__file__).parent / "tables" / "uwe_factor_dr3.json"
+TABLE_DR2 = Path(__file__).parent / "tables" / "uwe_factor_dr2.json"
 
 
-@lru_cache(maxsize=1)
-def _nodes():
-    bands = json.loads(TABLE.read_text())["bands"]
-    return np.array([0.5 * (b["G"][0] + b["G"][1]) for b in bands]), np.array([b["f"] for b in bands])
+@lru_cache(maxsize=2)
+def _nodes(table=TABLE):
+    bands = json.loads(table.read_text())["bands"]
+    return np.array([b.get("G_node", 0.5 * (b["G"][0] + b["G"][1])) for b in bands]), np.array([b["f"] for b in bands])
 
 
 def uwe_factor(G):
     """The factor of Gaia DR3 for G a number or an array: a float64 NumPy array of the shape of G (a 0-d array for a number)."""
     centres, values = _nodes()
+    return np.interp(np.asarray(G, dtype=float), centres, values)
+
+
+def uwe_factor_dr2(G):
+    """The factor of Gaia DR2 for G a number or an array, as uwe_factor is the factor of DR3: the median UWE of ordinary DR2 stars of the band (tables/uwe_factor_dr2.json, with its sample, simulation and hash) over the UWE that this package simulates for a single star in the DR2 window; the linear interpolation between the node positions (the median G of the rows of a node, G_node, or the band centre where the table has none), the end values outside them. A float64 NumPy array of the shape of G."""
+    centres, values = _nodes(TABLE_DR2)
     return np.interp(np.asarray(G, dtype=float), centres, values)
 
 
@@ -70,7 +77,7 @@ UNBINNED_EDGES = tuple(0.25 * k + 9.0 for k in range(29))  # the bands of the un
 @lru_cache(maxsize=1)
 def _unbinned_nodes():
     bands = json.loads(UNBINNED_TABLE.read_text())["bands"]
-    return np.array([0.5 * (b["G"][0] + b["G"][1]) for b in bands]), np.array([b["f"] for b in bands])
+    return np.array([b.get("G_node", 0.5 * (b["G"][0] + b["G"][1])) for b in bands]), np.array([b["f"] for b in bands])
 
 
 def unbinned_factor(G):

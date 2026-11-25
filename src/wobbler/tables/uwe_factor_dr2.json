@@ -1,0 +1,1099 @@
+{
+ "quantity": "factor between Gaia DR2's unit weight error and the one this package simulates for a single star in the DR2 window, by G: the median UWE sqrt(astrometric_chi2_al / (astrometric_n_good_obs_al - 5)) of ordinary stars in a band of G over this package's single-star UWE in the same band",
+ "sample": "gaiadr2.gaia_source, astrometric_params_solved = 31, bp_rp 0.90 to 1.55, astrometric_n_good_obs_al > 20, up to 5000 rows per band (the first returned by the archive; random_index < 200000000 from G 8), bands of 0.5 mag from G 4.5 to 19 and of 0.1 mag from G 10.5 to 12; the fit half of a band is its even rows and the held-out half its odd rows; nodes: a 0.5 mag band is cut into its 0.1 mag sub-bins when some pair of sub-bin medians of the fit half differs by more than 3 bootstrap standard deviations (validation/dr2/refit_factor.py), the node is placed at the median G of its fit-half rows (G_node), because the rows of a band with more than 5,000 stars cover only its lowest part, and the simulated single-star UWE of a node is the one of the 0.5 mag bands interpolated at that position; nodes: a 0.5 mag band is cut into its 0.1 mag sub-bins when some pair of sub-bin medians of the fit half differs by more than 3 bootstrap standard deviations (validation/dr2/refit_factor.py), the node is placed at the median G of its fit-half rows (G_node), because the rows of a band with more than 5,000 stars cover only its lowest part, and the simulated single-star UWE of a node is the one of the 0.5 mag bands interpolated at that position",
+ "simulation": "wobbler.simulate_fit of a single star (a1 = 0, uwe_factor = 1) in the DR2 window, 300 draws on each of 60 seeded sky positions (Scan.from_position, seed 826); the median over the positions of the median over the draws",
+ "bands_note": "band centres are the nodes of the linear interpolation; below the first and above the last centre f holds the end value",
+ "bands_sha256": "354c5087e4ef9907d2671cb435009756ca7f11c3163f1f8c86947ec6f82da980",
+ "bands": [
+  {
+   "G": [
+    4.5,
+    5.0
+   ],
+   "G_node": 4.778217,
+   "sliver_sampled": false,
+   "f": 5.5197745766150055,
+   "n_archive": 289
+  },
+  {
+   "G": [
+    5.0,
+    5.5
+   ],
+   "G_node": 5.285907,
+   "sliver_sampled": false,
+   "f": 3.5808849578707367,
+   "n_archive": 522
+  },
+  {
+   "G": [
+    5.5,
+    5.6
+   ],
+   "G_node": 5.5609262,
+   "sliver_sampled": false,
+   "f": 2.7506966308058387,
+   "n_archive": 150
+  },
+  {
+   "G": [
+    5.6,
+    5.7
+   ],
+   "G_node": 5.6607513,
+   "sliver_sampled": false,
+   "f": 2.4407366484844135,
+   "n_archive": 155
+  },
+  {
+   "G": [
+    5.7,
+    5.8
+   ],
+   "G_node": 5.7558288,
+   "sliver_sampled": false,
+   "f": 2.2168512313500206,
+   "n_archive": 171
+  },
+  {
+   "G": [
+    5.8,
+    5.9
+   ],
+   "G_node": 5.8535547,
+   "sliver_sampled": false,
+   "f": 1.929577819032982,
+   "n_archive": 223
+  },
+  {
+   "G": [
+    5.9,
+    6.0
+   ],
+   "G_node": 5.9528127,
+   "sliver_sampled": false,
+   "f": 1.7055315736215129,
+   "n_archive": 241
+  },
+  {
+   "G": [
+    6.0,
+    6.1
+   ],
+   "G_node": 6.045009,
+   "sliver_sampled": false,
+   "f": 1.5540669563370024,
+   "n_archive": 281
+  },
+  {
+   "G": [
+    6.1,
+    6.2
+   ],
+   "G_node": 6.153898,
+   "sliver_sampled": false,
+   "f": 1.492492974477332,
+   "n_archive": 330
+  },
+  {
+   "G": [
+    6.2,
+    6.3
+   ],
+   "G_node": 6.2498603,
+   "sliver_sampled": false,
+   "f": 1.4236543736062484,
+   "n_archive": 372
+  },
+  {
+   "G": [
+    6.3,
+    6.4
+   ],
+   "G_node": 6.354094,
+   "sliver_sampled": false,
+   "f": 1.3667081916116548,
+   "n_archive": 389
+  },
+  {
+   "G": [
+    6.4,
+    6.5
+   ],
+   "G_node": 6.4482493,
+   "sliver_sampled": false,
+   "f": 1.35760574279647,
+   "n_archive": 434
+  },
+  {
+   "G": [
+    6.5,
+    6.6
+   ],
+   "G_node": 6.55145,
+   "sliver_sampled": false,
+   "f": 1.3166258311287085,
+   "n_archive": 482
+  },
+  {
+   "G": [
+    6.6,
+    6.7
+   ],
+   "G_node": 6.6524222,
+   "sliver_sampled": false,
+   "f": 1.304573391469972,
+   "n_archive": 534
+  },
+  {
+   "G": [
+    6.7,
+    6.8
+   ],
+   "G_node": 6.7530293,
+   "sliver_sampled": false,
+   "f": 1.264703160844896,
+   "n_archive": 592
+  },
+  {
+   "G": [
+    6.8,
+    6.9
+   ],
+   "G_node": 6.85138705,
+   "sliver_sampled": false,
+   "f": 1.2490395639814378,
+   "n_archive": 624
+  },
+  {
+   "G": [
+    6.9,
+    7.0
+   ],
+   "G_node": 6.950708199999999,
+   "sliver_sampled": false,
+   "f": 1.2472837006707123,
+   "n_archive": 806
+  },
+  {
+   "G": [
+    7.0,
+    7.1
+   ],
+   "G_node": 7.05005815,
+   "sliver_sampled": false,
+   "f": 1.2232911050645991,
+   "n_archive": 825
+  },
+  {
+   "G": [
+    7.1,
+    7.2
+   ],
+   "G_node": 7.15170355,
+   "sliver_sampled": false,
+   "f": 1.228017547340935,
+   "n_archive": 865
+  },
+  {
+   "G": [
+    7.2,
+    7.3
+   ],
+   "G_node": 7.2542747,
+   "sliver_sampled": false,
+   "f": 1.2048237494169884,
+   "n_archive": 1013
+  },
+  {
+   "G": [
+    7.3,
+    7.4
+   ],
+   "G_node": 7.352762,
+   "sliver_sampled": false,
+   "f": 1.2005620098861405,
+   "n_archive": 1124
+  },
+  {
+   "G": [
+    7.4,
+    7.5
+   ],
+   "G_node": 7.452634,
+   "sliver_sampled": false,
+   "f": 1.1899806728467075,
+   "n_archive": 1173
+  },
+  {
+   "G": [
+    7.5,
+    8.0
+   ],
+   "G_node": 7.731672,
+   "sliver_sampled": false,
+   "f": 1.1880166314599059,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    8.0,
+    8.1
+   ],
+   "G_node": 8.048141999999999,
+   "sliver_sampled": false,
+   "f": 1.1979130371374067,
+   "n_archive": 301
+  },
+  {
+   "G": [
+    8.1,
+    8.2
+   ],
+   "G_node": 8.152267,
+   "sliver_sampled": false,
+   "f": 1.2406480384420435,
+   "n_archive": 322
+  },
+  {
+   "G": [
+    8.2,
+    8.3
+   ],
+   "G_node": 8.251321,
+   "sliver_sampled": false,
+   "f": 1.2172173039537315,
+   "n_archive": 346
+  },
+  {
+   "G": [
+    8.3,
+    8.4
+   ],
+   "G_node": 8.349982,
+   "sliver_sampled": false,
+   "f": 1.2282540941920845,
+   "n_archive": 418
+  },
+  {
+   "G": [
+    8.4,
+    8.5
+   ],
+   "G_node": 8.4507335,
+   "sliver_sampled": false,
+   "f": 1.2149538806551197,
+   "n_archive": 424
+  },
+  {
+   "G": [
+    8.5,
+    8.6
+   ],
+   "G_node": 8.552908,
+   "sliver_sampled": false,
+   "f": 1.1959959697723452,
+   "n_archive": 458
+  },
+  {
+   "G": [
+    8.6,
+    8.7
+   ],
+   "G_node": 8.651451999999999,
+   "sliver_sampled": false,
+   "f": 1.2269673195353072,
+   "n_archive": 544
+  },
+  {
+   "G": [
+    8.7,
+    8.8
+   ],
+   "G_node": 8.7481635,
+   "sliver_sampled": false,
+   "f": 1.2136101708610876,
+   "n_archive": 557
+  },
+  {
+   "G": [
+    8.8,
+    8.9
+   ],
+   "G_node": 8.850117,
+   "sliver_sampled": false,
+   "f": 1.2383298454245009,
+   "n_archive": 621
+  },
+  {
+   "G": [
+    8.9,
+    9.0
+   ],
+   "G_node": 8.95035,
+   "sliver_sampled": false,
+   "f": 1.2311900703602943,
+   "n_archive": 710
+  },
+  {
+   "G": [
+    9.0,
+    9.5
+   ],
+   "G_node": 9.282600500000001,
+   "sliver_sampled": false,
+   "f": 1.2290794068774504,
+   "n_archive": 4916
+  },
+  {
+   "G": [
+    9.5,
+    9.6
+   ],
+   "G_node": 9.548743,
+   "sliver_sampled": false,
+   "f": 1.2555285698446657,
+   "n_archive": 981
+  },
+  {
+   "G": [
+    9.6,
+    9.7
+   ],
+   "G_node": 9.64971975,
+   "sliver_sampled": false,
+   "f": 1.2460621122912465,
+   "n_archive": 1047
+  },
+  {
+   "G": [
+    9.7,
+    9.8
+   ],
+   "G_node": 9.748572,
+   "sliver_sampled": false,
+   "f": 1.2298190253336558,
+   "n_archive": 1215
+  },
+  {
+   "G": [
+    9.8,
+    9.9
+   ],
+   "G_node": 9.850668,
+   "sliver_sampled": false,
+   "f": 1.2453166632872608,
+   "n_archive": 1282
+  },
+  {
+   "G": [
+    9.9,
+    10.0
+   ],
+   "G_node": 9.928413,
+   "sliver_sampled": false,
+   "f": 1.2507704682370282,
+   "n_archive": 475
+  },
+  {
+   "G": [
+    10.0,
+    10.1
+   ],
+   "G_node": 10.040707000000001,
+   "sliver_sampled": false,
+   "f": 1.2747772777392703,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    10.1,
+    10.2
+   ],
+   "G_node": 10.1405365,
+   "sliver_sampled": false,
+   "f": 1.2889512290058642,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    10.2,
+    10.3
+   ],
+   "G_node": 10.2404215,
+   "sliver_sampled": false,
+   "f": 1.2820980747199577,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    10.3,
+    10.4
+   ],
+   "G_node": 10.340478749999999,
+   "sliver_sampled": false,
+   "f": 1.2814883073889773,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    10.4,
+    10.5
+   ],
+   "G_node": 10.440468,
+   "sliver_sampled": false,
+   "f": 1.2494832636853537,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    10.5,
+    10.6
+   ],
+   "G_node": 10.5518615,
+   "sliver_sampled": false,
+   "f": 1.2059124962851935,
+   "n_archive": 3267
+  },
+  {
+   "G": [
+    10.6,
+    10.7
+   ],
+   "G_node": 10.649831,
+   "sliver_sampled": false,
+   "f": 1.2128032605985843,
+   "n_archive": 3485
+  },
+  {
+   "G": [
+    10.7,
+    10.8
+   ],
+   "G_node": 10.75263275,
+   "sliver_sampled": false,
+   "f": 1.2366616411616906,
+   "n_archive": 3896
+  },
+  {
+   "G": [
+    10.8,
+    10.9
+   ],
+   "G_node": 10.851244,
+   "sliver_sampled": false,
+   "f": 1.2919683191997713,
+   "n_archive": 4254
+  },
+  {
+   "G": [
+    10.9,
+    11.0
+   ],
+   "G_node": 10.951105,
+   "sliver_sampled": false,
+   "f": 1.3667136671024513,
+   "n_archive": 4573
+  },
+  {
+   "G": [
+    11.0,
+    11.1
+   ],
+   "G_node": 11.0508515,
+   "sliver_sampled": false,
+   "f": 1.4187139153523973,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.1,
+    11.2
+   ],
+   "G_node": 11.151017,
+   "sliver_sampled": false,
+   "f": 1.437848003001144,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.2,
+    11.3
+   ],
+   "G_node": 11.2497425,
+   "sliver_sampled": false,
+   "f": 1.4333937529671883,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.3,
+    11.4
+   ],
+   "G_node": 11.350587,
+   "sliver_sampled": false,
+   "f": 1.4102509321354229,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.4,
+    11.5
+   ],
+   "G_node": 11.447386,
+   "sliver_sampled": false,
+   "f": 1.3661763448660649,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.5,
+    11.6
+   ],
+   "G_node": 11.5407995,
+   "sliver_sampled": false,
+   "f": 1.2962897484694056,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.6,
+    11.7
+   ],
+   "G_node": 11.640691499999999,
+   "sliver_sampled": false,
+   "f": 1.2401686713753368,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.7,
+    11.8
+   ],
+   "G_node": 11.733566,
+   "sliver_sampled": true,
+   "f": 1.1925884590267306,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.8,
+    11.9
+   ],
+   "G_node": 11.840535,
+   "sliver_sampled": false,
+   "f": 1.1544890938249561,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    11.9,
+    12.0
+   ],
+   "G_node": 11.940540500000001,
+   "sliver_sampled": false,
+   "f": 1.1302667063355687,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    12.0,
+    12.1
+   ],
+   "G_node": 12.040096,
+   "sliver_sampled": false,
+   "f": 1.115036815851404,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    12.1,
+    12.2
+   ],
+   "G_node": 12.1400965,
+   "sliver_sampled": false,
+   "f": 1.0874569432149956,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    12.2,
+    12.3
+   ],
+   "G_node": 12.2400705,
+   "sliver_sampled": false,
+   "f": 1.0867559010561427,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    12.3,
+    12.4
+   ],
+   "G_node": 12.34007625,
+   "sliver_sampled": false,
+   "f": 1.0904787162655012,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    12.4,
+    12.5
+   ],
+   "G_node": 12.4400635,
+   "sliver_sampled": false,
+   "f": 1.083451586358031,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    12.5,
+    12.6
+   ],
+   "G_node": 12.5400515,
+   "sliver_sampled": false,
+   "f": 1.0770166942718198,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    12.6,
+    12.7
+   ],
+   "G_node": 12.640054,
+   "sliver_sampled": false,
+   "f": 1.080418273744109,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    12.7,
+    12.8
+   ],
+   "G_node": 12.74004575,
+   "sliver_sampled": false,
+   "f": 1.1193087986881336,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    12.8,
+    12.9
+   ],
+   "G_node": 12.8400385,
+   "sliver_sampled": false,
+   "f": 1.15741537914218,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    12.9,
+    13.0
+   ],
+   "G_node": 12.94004275,
+   "sliver_sampled": false,
+   "f": 1.1052254778784516,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    13.0,
+    13.1
+   ],
+   "G_node": 13.040033,
+   "sliver_sampled": false,
+   "f": 0.9919630655345423,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    13.1,
+    13.2
+   ],
+   "G_node": 13.1400385,
+   "sliver_sampled": false,
+   "f": 0.8468279268993261,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    13.2,
+    13.3
+   ],
+   "G_node": 13.240029,
+   "sliver_sampled": false,
+   "f": 0.7805403217056313,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    13.3,
+    13.4
+   ],
+   "G_node": 13.3400325,
+   "sliver_sampled": false,
+   "f": 0.7797274211329966,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    13.4,
+    13.5
+   ],
+   "G_node": 13.440027,
+   "sliver_sampled": false,
+   "f": 0.7797181099804564,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    13.5,
+    13.6
+   ],
+   "G_node": 13.540027,
+   "sliver_sampled": false,
+   "f": 0.7881965781789406,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    13.6,
+    13.7
+   ],
+   "G_node": 13.6400215,
+   "sliver_sampled": false,
+   "f": 0.7924519001579137,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    13.7,
+    13.8
+   ],
+   "G_node": 13.740021,
+   "sliver_sampled": false,
+   "f": 0.7990721567377137,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    13.8,
+    13.9
+   ],
+   "G_node": 13.840018,
+   "sliver_sampled": false,
+   "f": 0.8156738543679368,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    13.9,
+    14.0
+   ],
+   "G_node": 13.940019,
+   "sliver_sampled": false,
+   "f": 0.8105296507066644,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    14.0,
+    14.1
+   ],
+   "G_node": 14.04002,
+   "sliver_sampled": false,
+   "f": 0.8189675254596647,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    14.1,
+    14.2
+   ],
+   "G_node": 14.140014,
+   "sliver_sampled": false,
+   "f": 0.8325787785097831,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    14.2,
+    14.3
+   ],
+   "G_node": 14.240011500000001,
+   "sliver_sampled": false,
+   "f": 0.8332957742084831,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    14.3,
+    14.4
+   ],
+   "G_node": 14.340011,
+   "sliver_sampled": false,
+   "f": 0.8468206488151797,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    14.4,
+    14.5
+   ],
+   "G_node": 14.440011,
+   "sliver_sampled": false,
+   "f": 0.8514626436704466,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    14.5,
+    14.6
+   ],
+   "G_node": 14.5400095,
+   "sliver_sampled": false,
+   "f": 0.8640819663431609,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    14.6,
+    14.7
+   ],
+   "G_node": 14.64001,
+   "sliver_sampled": false,
+   "f": 0.8778179894299283,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    14.7,
+    14.8
+   ],
+   "G_node": 14.740008,
+   "sliver_sampled": false,
+   "f": 0.8844787045619958,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    14.8,
+    14.9
+   ],
+   "G_node": 14.840008,
+   "sliver_sampled": false,
+   "f": 0.8940140476970067,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    14.9,
+    15.0
+   ],
+   "G_node": 14.940007,
+   "sliver_sampled": false,
+   "f": 0.8996494289171642,
+   "n_archive": 1000
+  },
+  {
+   "G": [
+    15.0,
+    15.1
+   ],
+   "G_node": 15.051814,
+   "sliver_sampled": false,
+   "f": 0.9192099627681368,
+   "n_archive": 803
+  },
+  {
+   "G": [
+    15.1,
+    15.2
+   ],
+   "G_node": 15.1527835,
+   "sliver_sampled": false,
+   "f": 0.9294897809627294,
+   "n_archive": 990
+  },
+  {
+   "G": [
+    15.2,
+    15.3
+   ],
+   "G_node": 15.255305,
+   "sliver_sampled": false,
+   "f": 0.9342417708440003,
+   "n_archive": 955
+  },
+  {
+   "G": [
+    15.3,
+    15.4
+   ],
+   "G_node": 15.3500085,
+   "sliver_sampled": false,
+   "f": 0.933777180831451,
+   "n_archive": 1109
+  },
+  {
+   "G": [
+    15.4,
+    15.5
+   ],
+   "G_node": 15.45153075,
+   "sliver_sampled": false,
+   "f": 0.9433932179168838,
+   "n_archive": 1143
+  },
+  {
+   "G": [
+    15.5,
+    15.6
+   ],
+   "G_node": 15.550284000000001,
+   "sliver_sampled": false,
+   "f": 0.9592854025489239,
+   "n_archive": 873
+  },
+  {
+   "G": [
+    15.6,
+    15.7
+   ],
+   "G_node": 15.6552945,
+   "sliver_sampled": false,
+   "f": 0.9687313566705493,
+   "n_archive": 950
+  },
+  {
+   "G": [
+    15.7,
+    15.8
+   ],
+   "G_node": 15.748613500000001,
+   "sliver_sampled": false,
+   "f": 0.9701242834821417,
+   "n_archive": 996
+  },
+  {
+   "G": [
+    15.8,
+    15.9
+   ],
+   "G_node": 15.853618,
+   "sliver_sampled": false,
+   "f": 0.9833208346459288,
+   "n_archive": 1072
+  },
+  {
+   "G": [
+    15.9,
+    16.0
+   ],
+   "G_node": 15.948946,
+   "sliver_sampled": false,
+   "f": 0.9830436123481925,
+   "n_archive": 1109
+  },
+  {
+   "G": [
+    16.0,
+    16.5
+   ],
+   "G_node": 16.269999499999997,
+   "sliver_sampled": false,
+   "f": 0.9966667572010347,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    16.5,
+    16.6
+   ],
+   "G_node": 16.54411,
+   "sliver_sampled": false,
+   "f": 1.0053538573762608,
+   "n_archive": 883
+  },
+  {
+   "G": [
+    16.6,
+    16.7
+   ],
+   "G_node": 16.650759,
+   "sliver_sampled": false,
+   "f": 1.0141952724333865,
+   "n_archive": 899
+  },
+  {
+   "G": [
+    16.7,
+    16.8
+   ],
+   "G_node": 16.752246,
+   "sliver_sampled": false,
+   "f": 1.0150300767486626,
+   "n_archive": 1039
+  },
+  {
+   "G": [
+    16.8,
+    16.9
+   ],
+   "G_node": 16.852772,
+   "sliver_sampled": false,
+   "f": 1.0199455184051824,
+   "n_archive": 1012
+  },
+  {
+   "G": [
+    16.9,
+    17.0
+   ],
+   "G_node": 16.950282,
+   "sliver_sampled": false,
+   "f": 1.0291359350380869,
+   "n_archive": 1167
+  },
+  {
+   "G": [
+    17.0,
+    17.5
+   ],
+   "G_node": 17.2669305,
+   "sliver_sampled": false,
+   "f": 1.0329135294803564,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    17.5,
+    18.0
+   ],
+   "G_node": 17.7541275,
+   "sliver_sampled": false,
+   "f": 1.0427294806891467,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    18.0,
+    18.5
+   ],
+   "G_node": 18.264290000000003,
+   "sliver_sampled": false,
+   "f": 1.0545460154469712,
+   "n_archive": 5000
+  },
+  {
+   "G": [
+    18.5,
+    19.0
+   ],
+   "G_node": 18.7669915,
+   "sliver_sampled": false,
+   "f": 1.0551967791623356,
+   "n_archive": 5000
+  }
+ ]
+}
