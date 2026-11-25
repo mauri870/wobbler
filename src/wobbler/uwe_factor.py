@@ -70,6 +70,29 @@ def fit_orbit_factor(G, uwe_simulated, uwe_archive, minimum_uwe=1.5):
     return np.array(out)
 
 
+ORBIT_TABLE_DR2 = Path(__file__).parent / "tables" / "uwe_orbit_factor_dr2.json"
+
+
+@lru_cache(maxsize=1)
+def _orbit_bands_dr2():
+    bands = json.loads(ORBIT_TABLE_DR2.read_text())["bands"]
+    return np.array([b["G"][0] for b in bands] + [bands[-1]["G"][1]]), np.array([b["B"] for b in bands])
+
+
+def orbit_factor_dr2(G):
+    """The orbit factor B of Gaia DR2 for G a number or an array (a float64 NumPy array of the shape of G): the value of the band of tables/uwe_orbit_factor_dr2.json that holds G (0.25 mag bands from G 9 to 15), the first band below G 9, and the single-star factor uwe_factor_dr2(G) from G 15 on."""
+    g = np.asarray(G, dtype=float)
+    edges, values = _orbit_bands_dr2()
+    index = np.clip(np.searchsorted(edges, g, side="right") - 1, 0, len(values) - 1)
+    return np.where(g >= edges[-1], uwe_factor_dr2(g), values[index])
+
+
+def calibrated_uwe_dr2(G, uwe_simulated):
+    """The unit weight error of Gaia DR2 predicted for a star of magnitude G whose simulated unit weight error in the DR2 window is `uwe_simulated`: sqrt(f(G)^2 + B(G)^2 (w^2 - 1)) with f = uwe_factor_dr2 and B = orbit_factor_dr2, the sum under the root kept at 0 or more. Divide by u0_dr2(G, bp_rp) for the RUWE."""
+    g, w = np.broadcast_arrays(np.asarray(G, dtype=float), np.asarray(uwe_simulated, dtype=float))
+    return np.sqrt(np.maximum(uwe_factor_dr2(g) ** 2 + orbit_factor_dr2(g) ** 2 * (w**2 - 1.0), 0.0))
+
+
 UNBINNED_TABLE = Path(__file__).parent / "tables" / "uwe_factor_unbinned_dr3.json"
 UNBINNED_EDGES = tuple(0.25 * k + 9.0 for k in range(29))  # the bands of the unbinned table: G 9 to 16 in steps of 0.25 mag
 

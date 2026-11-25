@@ -1,0 +1,175 @@
+{
+ "quantity": "orbit factor B of Gaia DR2's unit weight error: UWE_DR2 = sqrt(f_DR2(G)^2 + B(G)^2 (w^2 - 1)) with w the unit weight error that simulate_fit returns in the DR2 window with uwe_factor=1 and f_DR2 the single-star factor (uwe_factor_dr2); the value of the band that holds G, the first band below G 9, and f_DR2 from G 15",
+ "sample": "Gaia DR3 stars with an orbital solution and a five-parameter Gaia DR2 solution (the nearest gaiadr3.dr2_neighbourhood candidate), G below 15; B is fitted on a seeded half of them (validation/scoreboard.py halves, and for G 13 to 15 a permutation with the same seed) by `python validation/scoreboard_dr2.py score ... --factors dr2 --orbit dr2-faint`",
+ "fit": "B = sqrt(median over the stars of the band with w of 1.5 or more of max(0, (UWE_DR2^2 - f_DR2^2) / (w^2 - 1)))",
+ "bands": [
+  {
+   "G": [
+    9.0,
+    9.25
+   ],
+   "B": 0.6274963460056237
+  },
+  {
+   "G": [
+    9.25,
+    9.5
+   ],
+   "B": 0.6271528591831765
+  },
+  {
+   "G": [
+    9.5,
+    9.75
+   ],
+   "B": 0.6501597281020297
+  },
+  {
+   "G": [
+    9.75,
+    10.0
+   ],
+   "B": 0.6515581170669794
+  },
+  {
+   "G": [
+    10.0,
+    10.25
+   ],
+   "B": 0.6626019225901503
+  },
+  {
+   "G": [
+    10.25,
+    10.5
+   ],
+   "B": 0.6723746951832463
+  },
+  {
+   "G": [
+    10.5,
+    10.75
+   ],
+   "B": 0.6631195551885787
+  },
+  {
+   "G": [
+    10.75,
+    11.0
+   ],
+   "B": 0.6961136952048934
+  },
+  {
+   "G": [
+    11.0,
+    11.25
+   ],
+   "B": 0.716760788462956
+  },
+  {
+   "G": [
+    11.25,
+    11.5
+   ],
+   "B": 0.7014854320793426
+  },
+  {
+   "G": [
+    11.5,
+    11.75
+   ],
+   "B": 0.6628964443525963
+  },
+  {
+   "G": [
+    11.75,
+    12.0
+   ],
+   "B": 0.6298588048257093
+  },
+  {
+   "G": [
+    12.0,
+    12.25
+   ],
+   "B": 0.625847327342602
+  },
+  {
+   "G": [
+    12.25,
+    12.5
+   ],
+   "B": 0.6215228605514839
+  },
+  {
+   "G": [
+    12.5,
+    12.75
+   ],
+   "B": 0.6268882034606755
+  },
+  {
+   "G": [
+    12.75,
+    13.0
+   ],
+   "B": 0.6362089173648977
+  },
+  {
+   "G": [
+    13.0,
+    13.25
+   ],
+   "B": 0.6608430668185961
+  },
+  {
+   "G": [
+    13.25,
+    13.5
+   ],
+   "B": 0.6602898934721904
+  },
+  {
+   "G": [
+    13.5,
+    13.75
+   ],
+   "B": 0.6621974258510681
+  },
+  {
+   "G": [
+    13.75,
+    14.0
+   ],
+   "B": 0.659067268497687
+  },
+  {
+   "G": [
+    14.0,
+    14.25
+   ],
+   "B": 0.6907991363973558
+  },
+  {
+   "G": [
+    14.25,
+    14.5
+   ],
+   "B": 0.740205464035235
+  },
+  {
+   "G": [
+    14.5,
+    14.75
+   ],
+   "B": 0.777751189926166
+  },
+  {
+   "G": [
+    14.75,
+    15.0
+   ],
+   "B": 0.811445868417531
+  }
+ ]
+}
