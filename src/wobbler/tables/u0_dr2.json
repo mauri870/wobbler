@@ -1,0 +1,7 @@
+{
+  "quantity": "u0(G, C), the reference unit weight error of Gaia DR2 as a function of G and the BP-RP colour, such that RUWE = UWE / u0 (Lindegren 2018, GAIA-C3-TN-LU-LL-124-01)",
+  "source": "DR2_RUWE_V1.zip of https://www.cosmos.esa.int/web/gaia/dr2-known-issues (table_u0_g_col.txt, 193,251 rows)",
+  "zip_sha256": "e9f2448189a665bf6c998a205412b7f0ff166145ea6e6cacc67d2986ec5a9a28",
+  "grid": "G = 3.60 (0.01) 21.00, BP-RP = -1.0 (0.1) 10.0, values at the bin centres",
+  "sha256": "fd250baa1a0afca9459237953b98983ab7b2a4643fb971d88e032919ae580687"
+}
