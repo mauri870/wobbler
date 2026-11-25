@@ -6,13 +6,19 @@ wobbler models orbital motion and its impact on Gaia astrometric solutions. It p
 
 If you use wobbler, please cite gaiamock (El-Badry et al. 2024).
 
-![Gaia BH1 seen by wobbler](docs/fig-bh1.png)
+<p>
+<img src="docs/orbit-bh1.gif" alt="Gaia BH1's orbit, animated" width="25%">
+<img src="docs/fig-bh1.png" alt="Gaia BH1 seen by wobbler" width="72%">
+</p>
 
-> Gaia BH1: the companion pulls the star off its parallax loop (left), the single-star fit misses Gaia's observations by about 1 mas (middle), and the RUWE for each tilt of the orbit (right). At the published orbit wobbler predicts a RUWE of 7.0 against Gaia's 7.64.
+> Gaia BH1: the companion pulls the star off its parallax loop (left), the single-star fit misses Gaia's observations by about 1 mas (middle), and the RUWE for each tilt of the orbit (right). At the published orbit wobbler predicts a RUWE of 7.0 against Gaia's 7.64. The animation beside the figure shows the same orbit over Gaia DR3's 34 months, with the parallax removed: the star and the dark companion circle the barycentre (cross) on opposite sides as it moves across the sky.
 
-![Gaia BH3 seen by wobbler](docs/fig-bh3.png)
+<p>
+<img src="docs/orbit-bh3.gif" alt="Gaia BH3's orbit, animated" width="27%">
+<img src="docs/fig-bh3.png" alt="Gaia BH3 seen by wobbler" width="70%">
+</p>
 
-> Gaia BH3: Gaia DR3 saw 34 months of a 4,253-day orbit. wobbler predicts a RUWE of 4.03 against Gaia's 3.41, and the shift of the proper motion in right ascension, +6.24 against +6.08 mas/yr. In declination it predicts -0.56 against -0.06 mas/yr.
+> Gaia BH3: Gaia DR3 saw 34 months of a 4,253-day orbit. wobbler predicts a RUWE of 4.03 against Gaia's 3.41, and the shift of the proper motion in right ascension, +6.24 against +6.08 mas/yr. In declination it predicts -0.56 against -0.06 mas/yr. The animation beside the figure shows one full orbit, with the parallax removed. The date turns red inside Gaia DR3's window, and the inset enlarges the dark companion, which moves less than 1 mas.
 
 ## Why
 
